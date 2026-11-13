@@ -27,9 +27,9 @@ Do **not** equate a successful isolated dummy-hit test with enjoyable combat, or
 
 ## Checkpoint 0 — Preserve current baseline (immediate)
 
-**Observed in human playtest:** the existing `Prototype_Movement` capsule and third-person camera felt good. Lowest step was walkable; taller steps were not. Codex reported clean compilation and left prototype changes uncommitted pending human review.
+**Observed in human playtest (2026-11-14):** WASD movement and the third-person camera felt good. The lowest step was walkable; the two taller steps were not and are accepted for now. No movement or camera adjustments were requested.
 
-**Repository sync caveat at the time of this roadmap:** GitHub `main` still showed `Assets/Scenes/SampleScene.unity` only and no `Assets/Scripts` directory. The actual movement prototype shown in the screenshot therefore appears **local-only** until Codex commits/pushes it. Check actual Windows `git status`, remote and diff before editing; preserve unrelated pre-existing `Assets/Editor` deletions. Do not label this checkpoint completed based on chat alone.
+**Repository status:** the reviewed movement scene, scripts, and `.meta` files are committed on `main` as `3feb6691321d5f870d6810bd11c1021d5a7b6021`, and are present on GitHub. Unity 6000.6.9f1 compilation and Play Mode were reported clean in the prototype verification record in [04_PROTOTYPE.md](04_PROTOTYPE.md).
 
 **Exit:** baseline scene, scripts and `.meta` files reviewed, committed and accessible on remote GitHub; existing movement/camera still work.
 
