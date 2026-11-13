@@ -1,6 +1,6 @@
 # Prototype plan: test the game before designing the whole game
 
-**Current milestone:** **0.01 — Movement, camera, controls**. This supersedes earlier plans to implement loot/blacksmith immediately.
+**Current milestone:** **0.01a — basic movement/camera playtested and reported to feel good; review/commit the slice first. Then prioritize 0.02a — first combat-feel experiment.** Advanced movement refinements (jumping, sprinting, traversal polish) are deferred unless needed to test fighting. This supersedes earlier plans to implement loot/blacksmith immediately.
 
 ## Principle
 
@@ -31,11 +31,11 @@
 
 “Read AGENTS.md and the project docs. Implement only the first small part of Prototype 0.01 in a dedicated graybox scene: a capsule, basic third-person camera and configurable keyboard movement, using the existing Input System. Do not add combat, RPG or inventory systems. Use Unity CLI/Pipeline where available, compile/check errors, report tests, and leave a short playtest checklist. Avoid touching unrelated scenes.”
 
-After the first manual playtest, add/adjust one feature at a time (jump, sprint, dodge, camera collision, debug panel).
+**Human feedback:** The initial WASD movement and mouse orbit feel good. Low step is traversable; two taller steps are not. Do not change the working movement merely to make high steps traversable. The user clarified that **fighting feel matters more than additional basic movement polish**; postpone standalone jump/sprint/debug-panel refinements until they are useful. Preserve and commit this first vertical slice before implementing combat.
 
 ## Later experiments — order flexible, not a feature contract
 
-**0.02 Combat feel:** one training dummy, basic attack, damage, dodge/block/parry, attack feedback and input timings. Test grounded weight against snappy responsiveness. Do not preselect full class skill architecture.
+**0.02 Combat feel — NEXT PRIORITY:** begin with **0.02a: one basic attack against a stationary target**, readable range/timing, clear damage/hit feedback, and adjustable parameters. Preserve existing movement/camera. **0.02b:** give one simple enemy a readable attack so that we can test avoiding damage, combat spacing, timing and responsiveness; then explore dodge/block/parry where they help the fight. Assess basic combat before advanced traversal. Test grounded weight against snappy responsiveness. No full class skills, stat framework or finished art yet. **A stationary dummy alone tests hit feel, not complete combat feel**; the interactive enemy follow-up is essential.
 
 **0.03 Combat identity and enemies:** test class skill vs weapon skill vs hybrid with minimal stand-ins. Compare a couple distinctive foes against larger farmable packs; experiment with support synergies.
 

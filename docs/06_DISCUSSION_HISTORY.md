@@ -88,3 +88,9 @@ A new docs/09_ARCHITECTURE_GUARDRAILS.md records these boundaries and future dec
 The user clarified that letting a highly progressed character bring gear/progression freely into a fresh friend's world would **immediately ruin the fun the group could have**. This reinforces the objection to unrestricted option A, while keeping B (world-bound) and C (restricted/configurable hybrid) undecided. The concern is protecting fair collaborative progression, not only anti-cheat.
 
 They further stressed that proper separation of item/stat and character/class responsibilities matters **especially because of the project's size**. They want to research and evaluate suitable architecture rather than prematurely choosing a specific manager pattern or deterministic network simulation. Hybrid authored-town/procedural-world direction and Valheim-like building importance were reconfirmed. First action remains graybox movement.
+
+## 12. Prioritize fighting feel over polishing basic movement (2026-11-13)
+
+After the first playable `Prototype_Movement` graybox, Codex reported clean compilation and Play Mode and awaited human playtest. The user said the first step was traversable while the two higher steps were too high, and **WASD and camera movement felt good**. The assistant suggested jumping next, but the user explicitly corrected the priority: **“its more important how fighting general feels then basic movement i would say.”**
+
+Updated order: preserve/review/commit the basic movement implementation, then make small combat-feel experiments (first an attackable dummy; promptly then a responding enemy, to test genuine fight feel) before spending time on standalone jump/sprint/traversal polish. Dodge or similar mobility may be tested inside combat. This is a **priority correction, not a rejection of jumping** or an approved final combat design.
