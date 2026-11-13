@@ -82,3 +82,9 @@ After discussing early architecture risks, the user emphasized:
 - Agreed with modular input/camera and small architectural experiments while leaving content and balance details open.
 
 A new docs/09_ARCHITECTURE_GUARDRAILS.md records these boundaries and future decision timing; none changes the first task (movement and camera).
+
+## 11. Additional emphasis: protect fresh-world fun and choose architecture deliberately (2026-11-13)
+
+The user clarified that letting a highly progressed character bring gear/progression freely into a fresh friend's world would **immediately ruin the fun the group could have**. This reinforces the objection to unrestricted option A, while keeping B (world-bound) and C (restricted/configurable hybrid) undecided. The concern is protecting fair collaborative progression, not only anti-cheat.
+
+They further stressed that proper separation of item/stat and character/class responsibilities matters **especially because of the project's size**. They want to research and evaluate suitable architecture rather than prematurely choosing a specific manager pattern or deterministic network simulation. Hybrid authored-town/procedural-world direction and Valheim-like building importance were reconfirmed. First action remains graybox movement.

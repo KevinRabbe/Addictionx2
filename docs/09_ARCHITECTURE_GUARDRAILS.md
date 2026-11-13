@@ -17,6 +17,8 @@ This document captures architectural concerns that could cause future rewrites, 
 | Building | Valheim-like building is an essential gameplay pillar | **Confirmed importance; exact mechanics open** | Prototype a basic build loop, then deeper building-system tests |
 | First milestone | Graybox movement/camera/input | **Confirmed** | Now |
 
+**Engineering process guardrail:** Before each core system becomes permanent, write down its responsibilities, owned state, dependencies, and save/network implications in a *short* note. Avoid both architectural guesswork and premature frameworks. The user wants us to think carefully because the project is ambitious, **not** to commit today to one manager/service/ECS pattern.
+
 ## 1. Networking and authoritative state
 
 A co-op game should plan who has authority over **combat outcomes, loot creation, item ownership, building placement and saves**, even if networking arrives later. A **host/server-authoritative approach** is a candidate, not an approved framework. Do not write every eventual multiplayer mechanic assuming a single global local player; keep input, simulation and visual representation separate where it is cheap.
@@ -25,7 +27,7 @@ Do **not** force networking into the first capsule controller. Run a small **two
 
 ## 2. Persistence and identity
 
-The rejected option A meant **take one character and all its equipment/progression freely into unrelated worlds**. The user currently prefers either:
+The rejected option A meant **take one character and all its equipment/progression freely into unrelated worlds**. **User's reason:** a powerful transferred character in a fresh co-op world would immediately spoil the fun and organic progression for the people starting there. Safeguarding a group's experience is a primary design constraint, separate from code security or cheat prevention. The user currently prefers either:
 
 **B — World-bound:** player creates/maintains a character within a particular world's saved progress.
 
