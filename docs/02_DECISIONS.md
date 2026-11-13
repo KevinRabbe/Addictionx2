@@ -45,7 +45,7 @@
 
 ## CONFIRMED — immediate implementation priority
 
-- **First task was movement/camera/controls** to establish a playable graybox foundation; the user has now playtested this initial slice and reported that WASD and mouse camera **feel good**. It still needs normal review/commit discipline before expanding it.
+- **First task was movement/camera/controls** to establish a playable graybox foundation. The user playtested the committed 0.01a slice (commit `3feb669`, 2026-11-14) and reported that WASD and mouse camera **feel good**. The lowest step is traversable; two higher steps are not, which is acceptable for now. Preserve the working movement while moving on to combat experiments.
 - **Updated priority (2026-11-13): The overall feel of fighting is more important to the game's success than further polishing basic traversal.** After preserving the working first movement slice, experiment with basic combat interaction and feedback **before** spending time on optional jumping/sprint/traversal refinements. Necessary combat mobility (e.g. dodge) can be developed in the context of combat tests.
 - Keep combat experiments minimal: simple attack vs target first, then an enemy that can respond, followed by iterations on timing, impact, defensiveness and group fights. Do **not** lock weapon/class skill ownership or full combat architecture yet.
 - Decide enemy density/variety, character skill vs weapon skill behavior, gear progression and inventory implementation through later tests rather than overplanning.

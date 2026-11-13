@@ -1,37 +1,36 @@
 # Prototype plan: test the game before designing the whole game
 
-**Current milestone:** **0.01a — basic movement/camera playtested and reported to feel good; review/commit the slice first. Then prioritize 0.02a — first combat-feel experiment.** Advanced movement refinements (jumping, sprinting, traversal polish) are deferred unless needed to test fighting. This supersedes earlier plans to implement loot/blacksmith immediately.
+**Current milestone:** **0.01a — movement/camera complete, human-playtested, and committed as `3feb669` on 2026-11-14. Next: 0.02a — first combat-feel experiment.** Advanced movement refinements (jumping, sprinting, traversal polish) are deferred unless needed to test fighting. This supersedes earlier plans to implement loot/blacksmith immediately.
 
 ## Principle
 
 **One focused task → implement → compile/test → human playtest → adjust → commit.** Keep experiments reversible. Do not ask one AI prompt to create a complete survival RPG. Ugly is intentional: character capsules, primitive obstacles, flat lighting, placeholder names. Fun and reliable control are the test.
 
-## 0.01 — First controllable character (NOW)
+## 0.01a — First controllable character (COMPLETED)
 
 ### Scope
 
 - Dedicated **Prototype_Movement** graybox scene (exact filename flexible); preserve existing SampleScene rather than destructively replacing it.
 - Flat floor, a few ramps, steps, ledges and obstacles to test slopes/terrain and camera collision.
 - Single placeholder controllable character, third-person follow/orbit camera.
-- Functional walk/turn, camera-relative input if it feels right, jump; test sprint/run and dodge in **small separate tasks** rather than making every control a fixed commitment on day one.
-- Exposed tuning parameters (inspector and/or later in-game debug panel) for movement speed, acceleration/deceleration, turning, air movement, jump, camera distance/smoothing, sprint and dodge if present.
+- Camera-relative WASD walk/turn and a mouse-controlled third-person follow/orbit camera using the existing Input System actions.
+- Exposed Inspector tuning for movement speed/turning and camera sensitivity/distance/follow smoothing.
+- Jump, sprint, dodge, camera collision, and interaction remain follow-up experiments; they are not part of 0.01a.
 - Use the existing Unity Input System when practical, with understandable defaults; later remapping/gamepad support undecided.
 - No enemies, RPG levels, drops, multiplayer, blacksmith, building, dialogue, ships, procedural world or polished Blender assets in this milestone.
 
-### Acceptance tests
+### Verification and playtest result
 
-1. Project imports and compiles in Unity 6.6 with no new errors.
-2. Starting the movement scene permits input-controlled navigation.
-3. Camera follows/orbits, does not spontaneously snap/clip through obstacles in normal test cases.
-4. Character reliably stays on floor, climbs reasonable steps/slopes and jumps/lands; no obvious jitter or input-stuck states.
-5. Adjustable values produce observable differences without code rewrites.
-6. Tester can identify what feels responsive/weighty/awkward and record iteration notes. **AI cannot certify game feel from compilation.**
+1. Unity 6000.6.9f1 compiled the project without compilation failures; Pipeline opened and ran the new scene with no console errors.
+2. The human playtest reported that WASD movement and the third-person camera feel good.
+3. The lowest step is traversable. The two higher steps are not; this is accepted for now and does not trigger a movement change.
+4. Movement and camera tuning values are exposed in the Inspector. **AI does not certify game feel; the assessment above is the user's playtest result.**
 
 ### First Codex task suggestion (not a commitment to code details)
 
 “Read AGENTS.md and the project docs. Implement only the first small part of Prototype 0.01 in a dedicated graybox scene: a capsule, basic third-person camera and configurable keyboard movement, using the existing Input System. Do not add combat, RPG or inventory systems. Use Unity CLI/Pipeline where available, compile/check errors, report tests, and leave a short playtest checklist. Avoid touching unrelated scenes.”
 
-**Human feedback:** The initial WASD movement and mouse orbit feel good. Low step is traversable; two taller steps are not. Do not change the working movement merely to make high steps traversable. The user clarified that **fighting feel matters more than additional basic movement polish**; postpone standalone jump/sprint/debug-panel refinements until they are useful. Preserve and commit this first vertical slice before implementing combat.
+**Human feedback (2026-11-14):** The initial WASD movement and mouse orbit feel good. The low step is traversable; the two taller steps are not. Do not change the working movement merely to make high steps traversable. The user clarified that **fighting feel matters more than additional basic movement polish**; postpone standalone jump/sprint/debug-panel refinements until they are useful. This first vertical slice is committed as `3feb669` on `main`.
 
 ## Later experiments — order flexible, not a feature contract
 

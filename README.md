@@ -35,7 +35,7 @@ When a decision changes, update the decision ledger and the affected documentati
 
 ## Current next milestone
 
-**Prototype 0.01a movement/camera has been playtested and was reported to feel good.** Codex left the Unity scene/scripts local and uncommitted pending review; as of the 2026-11-14 roadmap check, these files were **not present on GitHub main**. First review/commit/push the local working prototype, then continue with [Prototype 0.02 combat experiments](docs/04_PROTOTYPE.md). The [longer-term proposed roadmap](docs/10_ROADMAP.md) intentionally brings survival/building and early persistence/network risk tests forward rather than treating them as distant afterthoughts.
+**Prototype 0.01a movement/camera is implemented, human-playtested, and committed to `main` as `3feb669`.** The player reported that WASD movement and the third-person camera feel good. The lowest step is traversable; the two higher steps are not, and that is accepted for now. The next milestone is [Prototype 0.02a combat experiments](docs/04_PROTOTYPE.md). The [longer-term proposed roadmap](docs/10_ROADMAP.md) intentionally brings survival/building and early persistence/network risk tests forward rather than treating them as distant afterthoughts.
 
 ## Repository notes
 
