@@ -17,7 +17,8 @@ The transcript described a creator dividing work among multiple models: a planni
 ## Video 2 — AI-built combat game in Godot, Unity and Unreal
 
 Uploaded transcript described:
-- Starting with **capsules attacking other capsules** to get combat right before models/polish.
+- Starting with **capsules attacking other capsules** to get combat mechanics and early timing/impact feel working before models/polish.
+- The user's later screenshot of the video's **Day 1 — Godot, 'Two Capsules on a Grid'** shows explicit debug visualization: Light 1 attack frame 8 active, startup **6** / active **3** / recovery **14** / total **23** frames, damage **8**, plus sample **5-frame hitstop**, **18-frame hitstun**, attack buffering and hitbox overlays. **These are visible demonstration values, not the intended statistics for Addiction².** This clarifies that capsules permit substantial timing and interaction playtesting, although they cannot fully evaluate attack poses, sword animation readability and final weapon feel.
 - Godot prototype, then Unity iteration with heavier impacts, hit-stop, camera shake, sound and VFX; later Unreal with more visual work and many tests.
 - A visually better later engine build **does not prove that engine is intrinsically faster or better**: design and assets were reused, and experience differed.
 - Headless workflows, agent work on scenes and compilation/tests, then repeated playtests.
