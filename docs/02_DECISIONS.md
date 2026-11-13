@@ -1,0 +1,95 @@
+# Decision ledger — approved, tentative, and rejected
+
+**Snapshot date:** 2026-11-13. This is the authoritative reference for **what is actually decided**. Read with docs/06_DISCUSSION_HISTORY.md to see why corrections were made.
+
+## CONFIRMED — game identity
+
+- Original game, **not** a mod/modpack for Valheim. Krumpac/Valheim modding was mentioned only as inspiration/context.
+- Valheim-inspired survival/exploration/building/freedom is the **foundation**; Metin2-inspired progression/loot/classes/NPCs/dungeons is the major complement; New World contributes a **small profession progression add-on**.
+- Single-player and co-op friend-group play; chill, voluntary pacing; no competitive MMORPG progression obligations.
+- A player can focus on building, grinding, or exploring without class-based survival restrictions.
+- We start by building an **ugly prototype** and testing it, not by exhaustively planning the full game.
+- Unity chosen over Godot for this trial, despite Godot being acceptable; Unreal explicitly disliked. Engine decision can be revisited on evidence, not just speculation.
+
+## CONFIRMED — starting world and progression direction
+
+- Starting settlement inspired by Metin2's **Map1**, visually/atmospherically mixed with Valheim's medieval/grounded world.
+- The **blacksmith is definitely wanted**. Other town NPCs are needs-driven, not a mandatory fixed list.
+- Town is the player's **early-game base**, with possibly a few mid/late-game unlocks or reasons to revisit.
+- **No player building inside the established starting town**; players eventually build their own home in the surrounding world.
+- Exploration, story, quests, monster fighting, **more dungeons and bosses**, and gear farming are central desired additions.
+- **Character levels** are wanted (even in solo/co-op); not strictly an MMO.
+- No hard dungeon-level entry barriers. Underleveled clears through personal skill, equipment, food, buffs, and/or teamwork should be possible.
+- Classes **yes**: likely each has a limited/small selection of compatible weapon types. Class determines combat identity, not survival/gathering/homebuilding access. Exact roster and abilities are undecided.
+- **Every class should be able to finish the game alone.** Different boss times are acceptable; combat effectiveness can later be tuned via damage/resistances and bonuses.
+- Supports are **valuable but never mandatory**; support synergy may allow a party at level ~18–20 to clear a dungeon normally comfortable around level ~30 (numbers illustrative).
+
+## CONFIRMED — social and professions
+
+- Parties/groups are wanted.
+- **No distance/proximity restriction on party character-XP sharing**, including a friend building at the base while another fights elsewhere.
+- Friend groups should be able to choose whether they share equally or give more XP to the player doing the killing. **The available mode(s) and actual formula remain to be prototyped.**
+- Gathering profession XP should come from personally doing the activity, rather than automatically sharing it like character XP (strong agreed direction in discussion).
+- Lightweight “guild/clan” group naming/identity for friends, roleplay, and several guilds within one shared world (e.g., 2–3); not Metin2's ranked, competitive, deep guild system.
+- Guild membership and active party are **different concepts**; parties should be allowed across guilds (design direction accepted).
+- Begin with a **small profession set**: mining, woodcutting, farming — no need for dozens of skills.
+
+## CONFIRMED — equipment philosophy
+
+- Regular weapon bonuses should be available across **all swords**, regardless of model: e.g. **+20% Damage vs Orcs** could roll on an ordinary sword or a special sword. It would be weird to arbitrarily prevent that bonus on one sword.
+- Ordinary weapon base stats can be fixed while different special items can have unique rules for static vs variable stats, distributions, ratios, or relationships.
+- **One** VMS/REK-inspired DSS/FKS-style weapon is sufficient as an initial **example/possible item**; perhaps one or two later. It is **one of N items**, **not a central system that defines the game**.
+- Desirable rare weapons should be able to remain meaningful for many hours when exceptionally rolled and upgraded.
+- Metin2-inspired **+0 to +9 enhancement** and regular item bonus switching are desired progression layers. Details, costs, failures, switching scope, and probabilities are not approved.
+- A special DSS/FKS roll is distinct from the shared ordinary bonus pool. The relationship of those two stats and whether/how they reroll is not finalized.
+
+## CONFIRMED — immediate implementation priority
+
+- **First task = movement, camera, and controls**, not the item loop or the blacksmith.
+- Small placeholder graybox map and capsule/player proxy. Tune feel by playtesting. Codex/Unity automation plus small verified jobs.
+- Decide enemy density/variety, character skill vs weapon skill behavior, gear progression and inventory implementation **after** the foundational movement experiment. Avoid overplanning.
+
+## DIRECTION / LIKELY, but NOT a final decision
+
+- Character/class skills combined with weapon-specific basic movesets (hybrid) sounds promising; **still untested**.
+- Combat might accommodate both Valheim-like dangerous individual encounters and Metin2-like groups/farming spots in different circumstances.
+- Shared character XP **equal/full XP as the default** was proposed; the user approved configurability, not a specific percentage.
+- Party and guild identity can coexist; possible member list, tags, emblems, permissions later.
+- Three professions might get small milestone perks, not big trees.
+- Class damage via weapon-type resistances for certain enemies/bosses could help maintain solo balance (bell/fan shaman example).
+- Rare equipment grind should add goals without trivializing ordinary crafted gear or forcing +9 to beat content.
+- Basic equipment/crafting must remain viable, and the house/base should support independence.
+
+## UNDECIDED — do NOT pretend these are solved
+
+- Character movement weight/speed, walking vs running/sprint input, stamina costs, jumping and dodge form; camera distance/follow/occlusion.
+- Character/class skill system vs weapon-tied skills vs hybrid; skill slots, attributes, leveling curve, maximum level, experience sources, and combat scaling.
+- Actual class roster (warrior/assassin/shaman/mage were **examples**); exact allowed weapon sets, buffs, damage profiles, and resistance matrix.
+- Enemy species/variety/density, group AI vs individual fights, respawns, drops, bosses, dungeon design, exact difficulty, coop scaling and boss layouts.
+- Items, inventory layout/weight/slots, armor categories, crafting/loot mix, rarities, bonus count/pools by non-weapon equipment category, stat ranges/probabilities, damage formulas, enhancement failures, reroll mechanics and locking.
+- How group XP distribution is configured, whether players can switch freely, percentages, how to deter accidental abuse, how rewards/loot are assigned.
+- The number and placement of other settlements; ships and world geography; procedural vs authored world structure.
+- Mining topology: ore nodes yes as broad idea, but underground excavatable terrain, mines/caves and dedicated mining dungeons are **not committed**.
+- Quest volume and narrative, precise number of NPCs, trade economy, reputation, and town mid/late-game services.
+- Exact profession progression depth, breakpoints, perk behavior, farming/woodcutting/mining numerical benefits.
+- Networking architecture, server model, saves, permissions, coop player cap, PvP policy.
+- Whether a visual “color bible,” stylization or lighting presets are used later.
+
+## REJECTED / CORRECTED — do not resurrect as constraints
+
+- **“We are building a Valheim mod.”** False. This is an original game.
+- **“We combine Valheim, Metin2, and New World equally.”** False. New World is only a small layer on top.
+- **“Elden Ring is a progression design target.”** False. It was mentioned only because it has levels.
+- **“All or most weapons roll DSS/FKS.”** False. One possible distinctive item among N.
+- **“Only the Moonblade can get Orc bonus while ordinary swords cannot.”** False. Ordinary bonuses belong to the broader sword category.
+- **“The exact weapon stats, sample probabilities, level bands, or dungeon examples have been approved.”** False. They were illustrative.
+- **“Shaman/support is required to complete dungeons.”** False. Support is optional, including for solo players.
+- **“Cooperation means strict party requirements or hard level locks.”** False. It helps players overperform **earlier**.
+- **“Miner must explore dedicated underground mining dungeons.”** Not decided; the user was unsure.
+- **“We need lots of settlements or an MMO guild leaderboard.”** Not requested.
+- **“Start implementation with loot, blacksmith, and levels.”** Superseded by **start with controls and movement**.
+- **“ChatGPT plugin installation confirms a local Codex plugin.”** It does not; verify both separately.
+
+## Updating this ledger
+
+Use the status categories above, a short dated note, and the reason/evidence (user decision vs playtest result). Do not erase alternatives from the notebook just because they are deferred.

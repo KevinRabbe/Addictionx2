@@ -1,0 +1,72 @@
+# Discussion history / provenance of decisions
+
+**Purpose:** Preserve the evolution of ideas, especially corrections, without promoting assistant speculation to confirmed facts. This is a **faithful thematic digest**, not a verbatim copy of every chat message. The contemporaneous complete conversation remains outside the repo; future chats must treat **this repo's decisions/docs as the working authority**.
+
+**Conversation snapshot:** November 13, 2026.
+
+## 1. Initial idea — Valheim meets Metin2
+
+User proposed a **Map1-inspired town**, NPCs as the differentiating factor, definitely a **blacksmith**, more quests/story, and continued Valheim-like survival/building outside town. The town can start as the player's base, but is not where player construction occurs. Later a player may use their own home and sometimes return to town or discover distant places/ships. Krumpac was an inspirational comparison.
+
+Assistant suggested blacksmith enhancements, merchants/elders/hunters, dynamic quests, balance of world/home/town and distant settlements. **Only chosen essentials were later promoted to the decision ledger.**
+
+## 2. Gathering, levels, grinding and dungeons
+
+User said mining is fun in New World, 7 Days to Die, Rust, Valheim for different reasons; a low-complexity profession tree for mining, woodcutting and farming would be enough. Wanted character levels (Elden Ring mentioned solely because it has them), more dungeons/bosses, more combat and the grind for a favorite Metin2-like item including upgrading. Assistant proposed profession milestones, dungeon mines and level caps as examples.
+
+**Correction:** user said **original game, not a Valheim mod**, and was **unsure about dedicated mines**.
+
+## 3. Underleveled freedom and the chill MMO
+
+User strongly endorsed no dungeon entry level walls: they are exactly the player who would attempt level-30-like content at absurdly low levels and astonish friends. They want the after-work, two-hours-toward-a-weapon feeling, while single-player removes competitive pressure. Friends may have their own dynamics; that's okay. Assistant proposed levels as power, not permission, and a complete finite adventure without MMO obligations. Long-term items can be known before they become obtainable.
+
+## 4. VMS/REK-inspired special stat item
+
+User introduced Vollmondschwert / Roteisenklinge **DSS/FKS** idea and variable item rolls alongside enhancement and bonus switching. They clarified that different items may have fixed/variable stats and different distributions or linked ratios. They also corrected a major misinterpretation:
+- Regular +Orcs damage bonus (e.g. +20%) should **not** be reserved to individual sword models: it can appear on **all swords**.
+- A DSS/FKS special weapon is only **one or maybe two** weapons to consider; later explicitly reiterated it's **one item of x/N equipment items**, not the equipment system's centrepiece.
+
+Assistant at various points suggested fixed original DSS/FKS rolls, switching them, upgrade costs, item stat tables, sample percentages, ranged bonuses, special weapon identities and feature lists. **No numeric balance values or reroll rules were approved.**
+
+## 5. Move from designing to prototyping; engine selection
+
+User asked to stop planning the whole game and build an ugly playable test. Already knows programming, has Godot installed and Blender MCP configured, hates Unreal, and considered Unity versus Godot. Unity 6.6/6000.6.9f1 was installing partly due to CLI/Codex automation potential.
+
+After tool discussion, Unity chosen for **this prototype**. Two video transcripts showed small-job AI workflows, placeholder characters, tests and iteration. User then challenged earlier rushed design assumptions: **movement/controls/camera must come first**; skill ownership (class/character vs weapon) and comparisons of mob variety, equipment, character and inventory between Valheim and Metin2 should be **decided through tests**, not assumed.
+
+## 6. Classes, support and underleveled co-op
+
+User said classes **yes** (Diablo 4 merely proof that classes can work without an MMO), each with a small appropriate weapon variety. Classes must not restrict building/survival activities. Assistant suggested class skills + weapon moveset hybrid, warrior/assassin/shaman/mage examples. **The actual roster/skill architecture remains undecided.**
+
+**Correction of cooperation interpretation:** user did not mean mandatory party content; they meant **two level ~18–20 friends can use boosts and teamwork to clear a dungeon a solo ~30 character would find reasonable**. Support isn't mandatory, regardless of its exact abilities. Every class can play through the game solo; some boss times can differ. User suggested boss/Metin-stone-type resistances/weapon-specific damage modifiers such as weaker resistance to shaman bell/fan attacks as later balance controls.
+
+User connected co-op classes to survival playstyles: a friend who loves building and running the base might **also** enjoy the support role and enable earlier dungeon attempts — but the builder is never forced into a support class.
+
+## 7. Parties, XP sharing and lightweight guilds
+
+User wanted parties/groups, **distance-independent XP sharing**, and tiny “guild/clan” naming for multiple friend subgroups in one world (roughly 2–3 possible), without Metin2 guild leaderboards or deep systems.
+
+Assistant suggested equal party XP and profession XP earned by actions. User endorsed configurable sharing: a group could choose **equal XP**, or give **more XP to the person doing the killing**, since they are not competing as an MMO. This addresses the builder being left behind.
+
+Guilds are social identity/roleplay rather than mandatory competitive progression; party/co-op can cross guild boundaries.
+
+## 8. Clarified influence hierarchy
+
+User explicitly stated: **Metin2 is the missing piece that complements Valheim; New World profession mechanics are just a topping.** Assistant had previously overrepresented three-way equivalence and was corrected.
+
+## 9. Installation and repository
+
+- Chose Unity 6.6 6000.6.9f1, URP.
+- User installed Unity Technologies plugin in ChatGPT.
+- Initially codex command not recognized, then Codex CLI installed and reported working.
+- unity command not recognized, then installed Unity CLI 1.0.0 with winget; authenticated successfully.
+- Pipeline installation initially errored with no Editor/project open.
+- User created **Addiction²** Unity project and linked a GitHub repo; Editor showed SampleScene.
+- Unity Pipeline **1.0.0 ready** was confirmed by unity pipeline editors; unity command listed Editor command groups.
+- An attempted PowerShell command combined cd and codex on one line without separator; correction was to execute separately or use semicolon.
+- Local project path **F:\Addiction²\Addiction²**, repository **KevinRabbe/Addictionx2**.
+- User asked to preserve **all game/project information in the repository** as the sole source of truth before implementation begins. This documentation set is the response.
+
+## The recurring error to avoid
+
+Assistant suggestions were sometimes stated too strongly and then corrected. **A repeated example is not an approved feature.** Future work must consult the decision ledger and preserve open design choices until tested/explicitly chosen.
