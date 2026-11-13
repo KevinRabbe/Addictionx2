@@ -22,7 +22,8 @@ This is **not** a Valheim mod and is **not** a plan to clone Metin2 or New World
 5. **[docs/05_DEVELOPMENT.md](docs/05_DEVELOPMENT.md)** — verified Unity/Codex/GitHub setup and operating workflow.
 6. **[docs/06_DISCUSSION_HISTORY.md](docs/06_DISCUSSION_HISTORY.md)** — chronological decision/correction history, so early mistakes do not come back as facts.
 7. **[docs/07_REFERENCES_AND_BACKLOG.md](docs/07_REFERENCES_AND_BACKLOG.md)** — the two AI-development-video lessons and deferred inspirations.
-8. **[AGENTS.md](AGENTS.md)** — operating instructions for Codex and future agents.
+8. **[docs/08_CONVERSATION_COVERAGE_AUDIT.md](docs/08_CONVERSATION_COVERAGE_AUDIT.md)** — item-by-item audit mapping the important original conversation decisions, corrections, and unanswered questions to repository documentation.
+9. **[AGENTS.md](AGENTS.md)** — operating instructions for Codex and future agents.
 
 ## Single source of truth
 

@@ -50,6 +50,10 @@ The creator reported very different durations across engines (about 8 days for G
 - Experiment with atmospheric lighting and a consistent stylized visual reference **after** prototype proves fun.
 - Test whether party/guild naming and multiple social settlements add value when multiplayer is ready.
 
+## Item/stat research that must not become a design requirement
+
+The discussion of Metin2's actual bonus system mentioned ordinary bonus slots 1–5, separately treated slots 6–7, switching tools, item-type bonus pools, and VMS/REK DSS/FKS stat relationships. These are reference details raised in conversation; **the project did not select the original game's seven-slot system, stat caps, probabilities, switching mechanics, or shop-based implementation**. The user specifically corrected the assistant to retain shared regular sword bonuses (such as damage vs Orcs) across all swords, and to treat a DSS/FKS item as just one exceptional weapon among many.
+
 ## Research caveat
 
 Previous assistant messages contained claims about exact Metin2 bonus probabilities/stat caps, precise Unity installation commands, and tooling releases. These were conversational references, **not primary-source-verified project requirements**. Verify current external documentation before implementing source-game-accurate numbers or depending on version-specific CLI behavior.

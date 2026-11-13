@@ -53,6 +53,7 @@
 
 - Character/class skills combined with weapon-specific basic movesets (hybrid) sounds promising; **still untested**.
 - Combat might accommodate both Valheim-like dangerous individual encounters and Metin2-like groups/farming spots in different circumstances.
+- Underleveled cooperative victories should come from real team synergy, preparation, and player skill — **not simply auto-lowering the dungeon's enemy levels** to the party. Exact co-op scaling remains undecided.
 - Shared character XP **equal/full XP as the default** was proposed; the user approved configurability, not a specific percentage.
 - Party and guild identity can coexist; possible member list, tags, emblems, permissions later.
 - Three professions might get small milestone perks, not big trees.

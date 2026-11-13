@@ -122,6 +122,16 @@ Example item layering (not approved stat lines):
 - Moonblade +6: own base and DSS/FKS plus **the same regular sword bonus eligibility**.
 - Other future weapons might have static stagger effects, life-steal with item-specific ranges, magical attacks or unique abilities.
 
+### Metin2 equipment-reference details versus our chosen rules
+
+The discussion briefly examined Metin2's **ordinary first five bonuses** and **separately handled sixth/seventh bonuses** as examples of multiple bonus layers. It also discussed reroll/switcher items and bonuses having different pools depending on **equipment slot/category** (weapons vs armor vs jewelry). **This describes the reference-game discussion; we have NOT chosen a 5+2 slot system, switcher design, exact source-game probabilities, or item caps.** Before implementing any claim as faithfully Metin2-like, verify it against current primary sources.
+
+The actual confirmed cross-item rule is more important: **ordinary bonuses such as +20% vs Orcs can roll on every sword**; item-specific DSS/FKS-like mechanics are exceptions limited to specifically designed weapons. Different non-weapon categories may have different pools, but the exact rules remain open.
+
+### Inventory alternatives explicitly raised
+
+The user flagged inventory as an unresolved Valheim-versus-Metin2 design choice. Candidate directions include **Valheim-like inventory slots/weight handling**, **Metin2-like item grid/equipment slots**, or a hybrid. None is approved. Compare after movement/combat tests; avoid prematurely building an elaborate inventory framework.
+
 ### Equipment progression philosophy
 
 Survival crafting should remain viable while optional rare-item farming offers a deep long-term goal. A beloved special early weapon with exceptional roll and +9 might remain useful for dozens of hours, but later regions should still introduce genuinely appealing items. The player can farm another drop for a better original roll, farm switching materials, farm enhancement materials, or ignore grinding and build their house.
