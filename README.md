@@ -24,7 +24,8 @@ This is **not** a Valheim mod and is **not** a plan to clone Metin2 or New World
 7. **[docs/07_REFERENCES_AND_BACKLOG.md](docs/07_REFERENCES_AND_BACKLOG.md)** — the two AI-development-video lessons and deferred inspirations.
 8. **[docs/08_CONVERSATION_COVERAGE_AUDIT.md](docs/08_CONVERSATION_COVERAGE_AUDIT.md)** — item-by-item audit mapping the important original conversation decisions, corrections, and unanswered questions to repository documentation.
 9. **[docs/09_ARCHITECTURE_GUARDRAILS.md](docs/09_ARCHITECTURE_GUARDRAILS.md)** — architecture risks, current preferences for persistence, stat/class/data layering, hybrid world generation and Valheim-like building.
-10. **[AGENTS.md](AGENTS.md)** — operating instructions for Codex and future agents.
+10. **[docs/10_ROADMAP.md](docs/10_ROADMAP.md)** — proposed path from graybox prototype to a tiny playable game combining survival/building and combat/RPG progression.
+11. **[AGENTS.md](AGENTS.md)** — operating instructions for Codex and future agents.
 
 ## Single source of truth
 
@@ -34,7 +35,7 @@ When a decision changes, update the decision ledger and the affected documentati
 
 ## Current next milestone
 
-**Prototype 0.01: movement, camera, and controls** in an ugly graybox test level. No combat, blacksmith, levels, inventory, quests, or elaborate assets yet. We will playtest movement feel first.
+**Prototype 0.01a movement/camera has been playtested and was reported to feel good.** Codex left the Unity scene/scripts local and uncommitted pending review; as of the 2026-11-14 roadmap check, these files were **not present on GitHub main**. First review/commit/push the local working prototype, then continue with [Prototype 0.02 combat experiments](docs/04_PROTOTYPE.md). The [longer-term proposed roadmap](docs/10_ROADMAP.md) intentionally brings survival/building and early persistence/network risk tests forward rather than treating them as distant afterthoughts.
 
 ## Repository notes
 
