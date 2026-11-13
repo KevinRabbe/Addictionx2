@@ -41,9 +41,9 @@ After the first manual playtest, add/adjust one feature at a time (jump, sprint,
 
 **0.04 Character/equipment prototype:** very small number of data-driven items, XP and levels, loot, basic blacksmith interaction, enhancement, one optional special DSS/FKS weapon. Only now is an item loop appropriate. Confirm stat/bonus ownership rather than implementing the speculative notebook as production data.
 
-**0.05 Survival connection:** tree/rock gathering, a few building parts, a tiny own-base area, and test whether gathering/building and combat progression reinforce each other.
+**0.05 Survival connection:** tree/rock gathering, a few building parts, a tiny own-base area, and test whether gathering/building and combat progression reinforce each other. **Follow-up building-specific experiment:** Valheim-like snapping, construction feel, structural rules and persistence — important to the game identity, not just a decorative placing mechanic.
 
-**Later:** simple starting-town NPC interactions, quest/dungeon prototype, multiplayer party XP/guild and networking after core movement/combat systems prove interesting. Co-op is foundational to the final game, so early architecture should avoid needlessly blocking future multiplayer.
+**Later:** small authored-town-in-generated-wilderness spike; simple starting-town NPC interactions, quest/dungeon prototype, multiplayer party XP/guild and networking after core movement/combat systems prove interesting. Co-op is foundational to the final game, so early architecture should avoid needlessly blocking future multiplayer.
 
 ## Test questions we care about
 

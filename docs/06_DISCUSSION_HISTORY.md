@@ -70,3 +70,15 @@ User explicitly stated: **Metin2 is the missing piece that complements Valheim; 
 ## The recurring error to avoid
 
 Assistant suggestions were sometimes stated too strongly and then corrected. **A repeated example is not an approved feature.** Future work must consult the decision ledger and preserve open design choices until tested/explicitly chosen.
+
+## 10. Follow-up: technical decisions we should make before they become expensive (2026-11-13)
+
+After discussing early architecture risks, the user emphasized:
+- Character/world persistence **matters later**, not for first movement prototype. Rejected **A**, unrestricted Valheim-like cross-world character/equipment transfer; **B world-bound** or **C restricted hybrid** remain options.
+- Suggested **separating the stat model and stat definitions from item definitions** rather than putting everything in one item class.
+- Raised whether class implementation should use **managers/proper architecture**, and asked if it should be **deterministic**; exact patterns remain undecided.
+- Favored **placing/desiging the starting town and procedurally generating the rest of the world**.
+- Explicitly reinforced **Valheim-like building** as an important gameplay system to prototype, not a throwaway decoration feature.
+- Agreed with modular input/camera and small architectural experiments while leaving content and balance details open.
+
+A new docs/09_ARCHITECTURE_GUARDRAILS.md records these boundaries and future decision timing; none changes the first task (movement and camera).

@@ -49,6 +49,15 @@
 - Small placeholder graybox map and capsule/player proxy. Tune feel by playtesting. Codex/Unity automation plus small verified jobs.
 - Decide enemy density/variety, character skill vs weapon skill behavior, gear progression and inventory implementation **after** the foundational movement experiment. Avoid overplanning.
 
+## NEW CLARIFICATIONS — architecture discussion (2026-11-13)
+
+- **World/character saves:** Character/world persistence is an important decision, **but not needed in the first movement prototype**. The user explicitly **does not want unrestricted Valheim-style option A** (one character freely taking all equipment/progression between any worlds). **World-bound characters (B)** or a **restricted/configurable hybrid (C)** are candidates. Do **not** choose B vs C without further discussion or playtest; define before serious persistent progression.
+- **Item data architecture:** User wants to investigate **separating stat model/stat definitions from item definitions**. Treat separation of immutable item templates, stat/bonus definitions and per-item runtime instances as a strong architectural direction. The exact classes, APIs, stacking order and bonus formulas are not fixed.
+- **Character/class code architecture:** User explicitly raised a more professional/modular **class/manager architecture**, and asked about **determinism**. The intended need is clear separation of responsibilities and predictable behavior, **not approval of a specific manager singleton, ECS, netcode library, or deterministic physics implementation**. Investigate composed components/services, data-driven class profiles and independently testable simulation logic.
+- **World approach:** User chose a **hybrid direction**: place/design important locations such as the starting town, **generate the surrounding world**. World-gen algorithms, seamless placement, seed handling, dungeon placement and scale remain undecided. This updates the earlier “procedural vs handcrafted?” open question.
+- **Building:** User emphasized the **Valheim building system is an important pillar**, not just generic “place one wall.” Its feel and systemic depth deserve a dedicated prototype experiment; exact structural support, snap points, repair, weather/roof behavior and multiplayer ownership are undecided.
+- **Immediate work unchanged:** movement/camera/controls first. Architecture guardrails **are not permission to overbuild a framework in Prototype 0.01**.
+
 ## DIRECTION / LIKELY, but NOT a final decision
 
 - Character/class skills combined with weapon-specific basic movesets (hybrid) sounds promising; **still untested**.
@@ -69,11 +78,11 @@
 - Enemy species/variety/density, group AI vs individual fights, respawns, drops, bosses, dungeon design, exact difficulty, coop scaling and boss layouts.
 - Items, inventory layout/weight/slots, armor categories, crafting/loot mix, rarities, bonus count/pools by non-weapon equipment category, stat ranges/probabilities, damage formulas, enhancement failures, reroll mechanics and locking.
 - How group XP distribution is configured, whether players can switch freely, percentages, how to deter accidental abuse, how rewards/loot are assigned.
-- The number and placement of other settlements; ships and world geography; procedural vs authored world structure.
+- The number and placement of other settlements; ships and world geography; **specific hybrid generation implementation** (hand-placed important locations plus generated surroundings is the selected direction).
 - Mining topology: ore nodes yes as broad idea, but underground excavatable terrain, mines/caves and dedicated mining dungeons are **not committed**.
 - Quest volume and narrative, precise number of NPCs, trade economy, reputation, and town mid/late-game services.
 - Exact profession progression depth, breakpoints, perk behavior, farming/woodcutting/mining numerical benefits.
-- Networking architecture, server model, saves, permissions, coop player cap, PvP policy.
+- Networking architecture, server model, save implementation, permissions, coop player cap, PvP policy; **persistence option B or C** remains unselected, while unrestricted option A is disfavored/rejected.
 - Whether a visual “color bible,” stylization or lighting presets are used later.
 
 ## REJECTED / CORRECTED — do not resurrect as constraints

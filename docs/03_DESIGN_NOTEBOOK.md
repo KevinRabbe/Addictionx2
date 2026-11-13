@@ -185,6 +185,41 @@ A builder/farmer friend could elect a support-oriented class, prepare buffs/food
 - The grind should be **voluntary** and reward incremental progress, not endless chores and artificial FOMO.
 - No need for infinite MMO endgame/season schedules; a finite complete adventure can still offer enormous sandbox replay value.
 
+## 7a. Technical architecture clarifications (2026-11-13)
+
+### Persistence: not the prototype bottleneck, but an early real-game decision
+
+The user objects to **option A: unrestricted cross-world transfer of a character's progress and equipment**. Two options remain:
+- **B: world-bound characters** — each world tracks its own player progression and items.
+- **C: hybrid** — worlds can choose whether/how character progression or items transfer, subject to restrictions.
+
+Both need careful compatibility between player identity, character identity, world identity and save versions. **Do not choose now or implement production saving in the movement prototype.**
+
+### Separating item definition, stat model and item instance
+
+The user explicitly asked whether the **stat model and definition should be separate**. A future proof-of-concept can separate:
+- **ItemDefinition**: identifier, item category, base weapon/armor properties, permissible stat families, enhancement capability.
+- **StatDefinition / BonusDefinition**: semantic identifier, numeric unit (flat/%), applicability rules, caps if desired, stacking and calculation semantics.
+- **ItemInstance**: concrete item UUID, enhancement level, randomly rolled stat values, rolled regular bonuses, durability if applicable.
+- **StatCalculation**: deterministic-in-the-mathematical-sense calculation/application of modifiers; independently testable and not tied to UI or drop-roll code.
+- **Roll tables**: optional distinct rarity/weighting/relationships per item, separate from stat definitions.
+
+This is an architectural **candidate breakdown**, not named production classes or final stat formulas. It protects the principle that an Orc bonus can appear on all swords and only selected special weapons roll DSS/FKS.
+
+### Class managers versus composition and determinism
+
+User raised a proper class/manager architecture and asked about being deterministic. Favor **clear responsibilities and data-driven class profiles**, without turning everything into one giant manager or overbuilding a service framework. Potential split: class definition/ability eligibility, runtime character state/level, combat action execution, shared survival and gathering, equipment. Class rules should not own building or farming.
+
+**“Deterministic” may refer to more than one thing:** predictable gameplay formulas, repeatable seeded random item/world generation, or fully identical simulation across networked machines. The first two are useful architecture goals. The third is **not automatically provided by Unity physics** and is **not required simply because co-op exists**. Server/host-authoritative game-state handling could be evaluated to avoid relying on lockstep-deterministic physics.
+
+### World: authored settlement in generated wilderness
+
+User likes **both** approaches: a **designed/placed Map1-inspired starting town** integrated into a **procedurally generated surrounding world**. Need later experiments on terrain reservation/flattening or blending around the town, safe location bounds, roads, stable placement, generation seed, loading, terrain changes and saved player-built structures. The “town is a placed location” direction is agreed; its scale/location/presentation and generation technique are not.
+
+### Building is not incidental
+
+The user explicitly highlighted the **Valheim building system** as important. Beyond merely supporting arbitrary cube placement, later tests should assess placement preview and snapping, building pieces, structural integrity/support, terrain interaction, repair/upgrades, ownership/permissions and save/network synchronization. **Those exact mechanics are experiment candidates**, not all confirmed features. Building should remain enjoyable as a long-term playstyle independent of combat class.
+
 ## 8. What is deliberately NOT settled
 
 No final world map, biomes, story, architectural style guide, character models, enemy bestiary, town NPC count, dialogue, tech tree, level cap, class list, skill trees, XP percentages, damage numbers, drop probabilities, crafting economy, equipment failure mechanics, inventory format, mining terrain system, ship implementation, additional settlement roster or full multiplayer network design.

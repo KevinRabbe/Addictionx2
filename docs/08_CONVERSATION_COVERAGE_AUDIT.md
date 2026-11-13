@@ -89,3 +89,14 @@ After a major discussion or design approval:
 4. Add a traceability row here only if a new major topic arrives or prior coverage was missing.
 
 **Coverage scope caveat:** This is based on the conversation visible for the audit, not hidden reasoning, inaccessible external chats or a verbatim backup of the entire conversation. The full literal chat history is not checked into Git; this repository is a maintained decision/knowledge base.
+
+## Addendum — architecture follow-up (2026-11-13)
+
+The later conversation introduced additional confirmed directions/preferences:
+- **Persistence:** no unrestricted character/equipment world transfer (option A); **B world-bound** or **C configurable hybrid** under consideration; important before serious saves, not movement prototype.
+- **Items:** user favors separating stat model/definitions from item definitions/instances.
+- **Classes:** user raised manager/compositional architecture and determinism as design questions, **not a finished architecture**.
+- **Map:** hand-place/design the starting town and generate the surrounding world — a chosen **hybrid direction**.
+- **Building:** Valheim's building system is part of the essential game experience and needs a real dedicated playtest, not just generic placing.
+
+See docs/02_DECISIONS.md and docs/09_ARCHITECTURE_GUARDRAILS.md for current status and cautions.

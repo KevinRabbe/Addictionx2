@@ -3,7 +3,7 @@
 ## Mandatory first steps in every new task/session
 
 1. Read README.md, docs/01_VISION.md, docs/02_DECISIONS.md, and docs/04_PROTOTYPE.md.
-2. Read the relevant sections of docs/03_DESIGN_NOTEBOOK.md and docs/05_DEVELOPMENT.md. Consult docs/08_CONVERSATION_COVERAGE_AUDIT.md when reconstructing context, making a design change, or checking if earlier user corrections are captured.
+2. Read the relevant sections of docs/03_DESIGN_NOTEBOOK.md and docs/05_DEVELOPMENT.md. Consult docs/08_CONVERSATION_COVERAGE_AUDIT.md when reconstructing context, making a design change, or checking if earlier user corrections are captured. Before introducing inventory, class logic, world generation, saving or network state, read docs/09_ARCHITECTURE_GUARDRAILS.md.
 3. Inspect the current repository and Unity project state before editing. Do not guess what has already been implemented.
 4. State the **one small task**, why it matters, and its acceptance test. Implement only that slice.
 5. Verify by compiling/importing in Unity and running appropriate automated checks; report what could **not** be checked. The human decides whether movement/combat/visuals actually **feel good**.
