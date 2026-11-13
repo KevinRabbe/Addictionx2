@@ -98,3 +98,9 @@ Updated order: preserve/review/commit the basic movement implementation, then ma
 ## 13. Combat feel needs 3D animation to be evaluated meaningfully (2026-11-13)
 
 The user challenged the assumption that capsule-only prototyping is enough to assess **fighting feel**: without a 3D model and movement/attack animation, only **some** combat mechanics can be tested. That distinction is accepted. Basic primitive tests remain useful for attack events, hit detection and damage/cooldown logic, but **full subjective combat feel** will require a **rigged and animated humanoid test asset** and eventually a reacting/attacking enemy. The user has *not* approved any particular source/model style, art budget or animation workflow; an inexpensive/test-quality placeholder should precede full custom production. Existing movement/camera playtest feedback remains positive.
+
+## 14. Screenshot/transcript clarification — borrow the method, not the combat style (2026-11-14)
+
+The user provided a screenshot of the example creator's **two-capsules combat debug view** and re-supplied the video transcript. They emphasized that the original author had **his own specific fighting style**, and asked what genuinely transfers to Addiction² from the **prototype screenshot**.
+
+The useful transferable technique is a tiny, easily inspected debug arena with **visible hitboxes, attack phases/timing, hit/miss events, target HP and input state**. The video screenshot also illustrates hitstop, hitstun and buffering, but **those mechanics and the shown frame numbers are observations, not approved design requirements for our game**. The transcript explains that the creator later changed feedback, effects, animation and sound in response to playtests. Distinguish a *testing workflow* from a chosen combat system. The follow-up experiment should uncover Addiction²'s own desired feel, rather than copy the video author's Onimusha-inspired combat.
