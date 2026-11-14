@@ -49,6 +49,12 @@
 - This does **not** approve a fixed walking distance, a harbor/dock, a specific road to the sea, an ocean view from town, or the position of the town on every generated island.
 - The previously drawn two entrance routes remain **two land routes to the surrounding world**; their precise directions and whether either eventually reaches the coast are undecided.
 
+## CONFIRMED — town integration in generated worlds (world decision 5, 2026-11-14)
+
+- Director selected **Option B: a recognizable, handcrafted town layout with procedurally varied surroundings and suitable placement per generated world**. Core town arrangement should remain recognizably authored; nearby terrain, forests, hills and coastlines should differ between world seeds.
+- **The town must fit its location naturally**, with paths meeting the landscape. The implementation approach (terrain shaping, placement constraints, road blending, generator rules) is **not yet chosen**; do not assume a runtime pasted prefab or hand-code a fixed location.
+- Maintain the **two entrances**, inland-near-coast character and prohibition on building inside the town. The broader islands-and-oceans topology remains **preferred for experiments**, not fully fixed.
+
 ## CONFIRMED — starting-region spatial principles (2026-11-14)
 
 - Director shared a high-level **Map1-inspired town sketch**, and explicitly clarified that **two black markings represent two paths for entering the town**. They should **not** be interpreted as dark/hostile regions.

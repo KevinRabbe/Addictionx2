@@ -33,6 +33,12 @@ This is part of the **building/world-first development direction**. The RPG syst
 
 The director chose **an inland settlement relatively near the coast** (world decision #4, 2026-11-14). It should retain a land-based Map1-style feel rather than become a coastal port. Sailing can matter later, but town-to-shore travel time, coastal roads, harbor placement and whether the sea is visible from town are **not decided**. Both existing entrances remain paths to the wilderness; do not arbitrarily designate either as the route to a dock.
 
+## Reusable town across different world seeds — confirmed direction
+
+Director chose **Option B (world decision #5, 2026-11-14):** preserve a **recognizable, authored town design** but allow the world generator to place it in a suitable position on each starting island with **different surrounding geography and vegetation**. The town does **not** require an identical, permanently fixed starting landscape. Keep the town inland and relatively close to the coast, connected to the world via its two drawn entrance paths.
+
+**Implementation intentionally open:** suitable-site selection, authored-terrain footprint, transition grading, connection of town roads to generated paths, spawn safety, and persistence of player changes must be resolved through later design and prototypes. No exact technical stamping/terrain-editing technique is approved.
+
 ## Player-building relationship
 
 The protected town serves as an initial point of reference and NPC support. After leaving by either path, players eventually find a place for their own home in the wilderness. The home should be something players can grow and return to over many sessions; **placement restrictions, terrain rules, structural support, permissions and exact home benefits have not yet been selected**.
