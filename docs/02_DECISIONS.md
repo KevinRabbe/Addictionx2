@@ -31,6 +31,12 @@
 - **Unresolved independently:** dungeon interiors/scenes/instances, optional teleports or fast travel, streaming/scene loading behind the scenes, world size and limits, island/continent geography, and terrain-generation algorithm. A seamless-feeling world does not rule out technical streaming.
 - **Rationale:** preserve Valheim-like exploration, sailing possibilities, player-chosen home locations and an inhabitable shared world, while borrowing Metin2's crafted town identity and recognizable RPG locations.
 
+## DIRECTION / EXPERIMENT — ocean-and-islands geography (2026-11-14)
+
+- **World-design Decision #2 is deliberately provisional:** director personally **prefers Option A**, a Valheim-like world of islands and oceans, and explicitly wants to **experiment with it**, rather than approving a final world-generation topology.
+- **Option C (large starting continent plus distant islands)** remains an alternative but is currently less preferred. The director considers **mounts likely necessary if Option C is chosen** because of longer overland travel. This is a design concern, **not an approved mounts feature or mandatory NPC**.
+- **Testing implications:** start with the experience of exploring/building on a landmass and eventually crossing water; avoid implementing boats/mounts simply because a map category was mentioned. Starting-island scale, when sailing becomes necessary, archipelago spacing, biome placement and number of landmasses all remain undecided.
+
 ## CONFIRMED — starting-region spatial principles (2026-11-14)
 
 - Director shared a high-level **Map1-inspired town sketch**, and explicitly clarified that **two black markings represent two paths for entering the town**. They should **not** be interpreted as dark/hostile regions.

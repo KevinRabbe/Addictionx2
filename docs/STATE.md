@@ -23,6 +23,10 @@
 
 **One continuous main world**, not separate Metin2-style overworld maps. Authored settlements and locations will sit inside generated terrain; town entrances connect to surrounding wilderness without portal transitions. World size, landmass/ocean arrangement, streaming, fast travel and dungeon interior handling remain open. We are **discussing the world step by step**, not yet assigning a Codex implementation task.
 
+## World design direction 2 — island geography (experimental)
+
+**Preference, not final lock:** the director favors **Option A: islands and oceans**, and wants to experiment with that world structure. A large-continent hybrid (Option C) is less attractive partly because the director expects it would make **mounts necessary for overland travel**. Do not add mounts, boats or a fixed archipelago algorithm from this preference alone. **Next design question:** how much explorable/buildable land should be accessible around the starting town before sailing is needed?
+
 ## Starting-region design reference
 
 The director supplied a high-level **Map1-inspired starting-town sketch with two black-marked entry paths**. The town should be a safe, useful hub; players build outside it; the nearby wilderness should invite exploration; the drawn **hill marks a boundary**, not a committed gameplay landmark. **The two black marks are entrances, not dangerous biomes.** A **bottom-left area is a flexible potential NPC location** (mount-related only if needed; otherwise any suitable NPC). Detailed route roles and terrain geometry are open. See [12_STARTING_REGION.md](12_STARTING_REGION.md). **This is a design statement, not authorization to start a Codex scene task.**
