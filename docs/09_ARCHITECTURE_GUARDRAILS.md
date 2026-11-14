@@ -19,6 +19,12 @@ This document captures architectural concerns that could cause future rewrites, 
 
 **Engineering process guardrail:** Before each core system becomes permanent, write down its responsibilities, owned state, dependencies, and save/network implications in a *short* note. Avoid both architectural guesswork and premature frameworks. The user wants us to think carefully because the project is ambitious, **not** to commit today to one manager/service/ECS pattern.
 
+## New world-architecture requirement (2026-11-14): deformable terrain
+
+**Confirmed gameplay direction:** outdoor terrain is editable by players (lower/dig, raise, flatten, reshape), Valheim-style. This has consequences for procedural generation, town/POI protection, construction placement/support, water/coast edges, persistence and multiplayer replication. In future prototypes, compare feasible terrain representation and serialization/authority options **before committing to a full-world implementation**. Persist edits separately from the seed and prevent regeneration from overwriting them.
+
+**Not implied:** voxel caves, freeform undercuts and tunnels, unlimited depth, a specific Unity terrain API, global real-time terrain regeneration or fixed terraforming costs. These are not approved by the surface-editing decision.
+
 ## 1. Networking and authoritative state
 
 A co-op game should plan who has authority over **combat outcomes, loot creation, item ownership, building placement and saves**, even if networking arrives later. A **host/server-authoritative approach** is a candidate, not an approved framework. Do not write every eventual multiplayer mechanic assuming a single global local player; keep input, simulation and visual representation separate where it is cheap.

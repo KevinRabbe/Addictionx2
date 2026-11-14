@@ -77,6 +77,13 @@
 - **Biome consistency remains intact (Decision #6):** a biome's ordinary encounter baseline does not scale with distance. Distance affects **probability of biome occurrence**, **not** the enemy levels inside the same biome.
 - Exact distance curves, world radius, biome counts, rarity probabilities, island layout, guaranteed routes and generation algorithms are **undecided** and need empirical world-generation/exploration tests. Overall island-and-ocean geography is still a **preferred experimental direction** rather than a completely locked implementation.
 
+## CONFIRMED — modifiable outdoor terrain (world decision 9, 2026-11-14)
+
+- Director chose **Option A: Valheim-style terrain deformation**. Players should eventually be able to **dig/lower, raise, flatten and reshape outdoor ground** for building foundations, roads and landscaping.
+- This is an **intended gameplay capability** that matters early for generated terrain, building placement, world-state persistence and co-op authority; it is **not** authorization to implement every tool immediately.
+- **Scope clarification:** this decision does **not** automatically require full voxel terrain, caves, horizontal tunnels or arbitrarily deep excavation. Those are materially different technical/gameplay questions that remain open. Terrain depth/height limits, materials, tool unlocks, building protection and costs are also unchosen.
+- Terrain edits in shared worlds must ultimately survive saving and reloading, and should not be overwritten by procedural regeneration. The technical representation/network authority is to be investigated before choosing production architecture.
+
 ## CONFIRMED — starting-region spatial principles (2026-11-14)
 
 - Director shared a high-level **Map1-inspired town sketch**, and explicitly clarified that **two black markings represent two paths for entering the town**. They should **not** be interpreted as dark/hostile regions.
