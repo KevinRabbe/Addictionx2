@@ -58,6 +58,10 @@
 
 The director supplied a high-level **Map1-inspired starting-town sketch with two black-marked entry paths**. The town should be a safe, useful hub; players build outside it; the nearby wilderness should invite exploration; the drawn **hill marks a boundary**, not a committed gameplay landmark. **The two black marks are entrances, not dangerous biomes.** A **bottom-left area is a flexible potential NPC location** (mount-related only if needed; otherwise any suitable NPC). Detailed route roles and terrain geometry are open. See [12_STARTING_REGION.md](12_STARTING_REGION.md). **This is a design statement, not authorization to start a Codex scene task.**
 
+## First playable brief — revised proposal (not yet authorized)
+
+[BRIEF_01_SHELTER.md](BRIEF_01_SHELTER.md) now proposes **walk around a small outdoor region → choose among at least two building sites → place/snap/rotate pieces → inhabit a shelter → revise it**, with **temporary unlimited materials** to judge building feel before gathering. It includes a protected-town proxy and local work/reconciliation safety. Terraforming, support physics, saving, co-op, procedural islands and gathering remain later stages. **Do not launch Codex based solely on this documentation update.**
+
 ## Proposed development strategy — planning only
 
 See [13_WORLD_BUILDING_STRATEGY.md](13_WORLD_BUILDING_STRATEGY.md) for a **playable-first sequence**: preserve/reconcile local work and check terrain constraints → outdoor shelter placement **feel** (possibly free materials first) → terraforming + persistent structures → early two-player world-state checkpoint → limited seeded region with the authored town → integrated gathering/home loop and later RPG encounters. This is **not authorization** to launch `BRIEF_01_SHELTER.md`; that candidate may be revised to focus first on placement/world feel.
@@ -66,7 +70,7 @@ See [13_WORLD_BUILDING_STRATEGY.md](13_WORLD_BUILDING_STRATEGY.md) for a **playa
 
 - **Available on GitHub:** `Prototype_Movement` scene and controller/camera, playtested and committed (`3feb669`). User liked WASD and orbit camera.
 - **Reported local-only, uncommitted:** `Prototype_Combat` scene/scripts and edits to `docs/04_PROTOTYPE.md` and `docs/10_ROADMAP.md`. This is a **technical smoke test**, not an enjoyable combat prototype. Preserve it safely; never overwrite local work or the three unrelated `Assets/Editor` deletions.
-- **Current brief:** [BRIEF_01_SHELTER.md](BRIEF_01_SHELTER.md). The first substantial playable outcome is **gather wood → build a tiny shelter → walk inside**. The brief is an implementation proposal subject to reality checks in Unity, not a mandate for polished tree physics or a production inventory.
+- **Current proposed brief:** [BRIEF_01_SHELTER.md](BRIEF_01_SHELTER.md). The first substantial playable outcome is **choose an outdoor build site → snap/build/enter/revise a shelter**, with **temporary unlimited materials** to isolate construction feel. The brief remains an unlaunched proposal and requires careful local state preservation.
 - Older documentation may still say `combat next`; **this state note overrides the old sequencing**, not the mechanics or architecture decisions in the ledger.
 
 ## Working direction after the shelter

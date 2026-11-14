@@ -1,46 +1,64 @@
-# BRIEF 01 — Gather wood, build a tiny shelter
+# BRIEF 01 — Find a place and build a shelter
 
-**Status:** first building-first playable brief, proposed 2026-11-14. **Priority:** feel of placing/connecting parts and making a recognizable shelter; gathering is there to give building a simple reason, not to launch a tree-simulation project.
+**Revised:** 2026-11-14  
+**Status:** **Proposed first building/world playable milestone — ready for director review, NOT yet authorized for Codex execution.**  
+**Primary question:** *Does finding a place in the world and freely building a small shelter feel intuitive, inviting, and creatively satisfying?*
 
-**Read:** `AGENTS.md`, `docs/STATE.md`, `docs/02_DECISIONS.md`, and relevant building guidance in `docs/09_ARCHITECTURE_GUARDRAILS.md`. Inspect existing code and local `git status` first; respect uncommitted combat work and unrelated `Assets/Editor` deletions.
+Related: [world/building strategy](13_WORLD_BUILDING_STRATEGY.md), [current state](STATE.md), [confirmed decisions](02_DECISIONS.md).
 
-## What the player does
+## Player-facing outcome — one complete playable experience
 
-Walk through a small outdoor graybox area, chop or harvest wood, use it to **construct a tiny shelter from connected pieces**, and walk inside. The playable outcome must be more than a button that spawns cubes.
+Use the familiar third-person movement/camera to explore a small **outdoor landscape**, choose between **at least two plausibly interesting build sites**, construct a recognizable **small shelter**, **walk inside**, and then **modify or extend it** without restarting the scene.
 
-## Why it matters
-
-**Building and living in the world is the foundation** of Addiction². We're testing whether aiming, rotating, snapping, placing, removing and arranging pieces encourages the player to keep constructing. A brief resource loop gives construction context.
+The environment should feel like the edge of a place one could live in, not a featureless test platform or a final-size world. **This is not the entire island, completed starting village, or procedural generator.**
 
 ## Playable acceptance scenario
 
-1. **Scene:** Create a separate `Prototype_Building` test scene, preserving `Prototype_Movement`, `Prototype_Combat` and unrelated work. Reuse working WASD and orbit camera.
-2. **Gather:** A few obvious harvestable trees/wood sources. The player can hit/interact repeatedly, see a clear reaction and obtain wood. A tree may topple with a **simple scripted visual**; do not implement physically simulated falling trees or realistic chopping. Wood is shown with a simple counter; sources can be reset/replenished for repeat play.
-3. **Build:** A build-mode toggle, translucent piece preview where aimed, clear valid/invalid feedback, controlled rotation, and satisfying **edge snapping** with simple grid fallback. Adjustable snap/grid values in Inspector. The system should prevent obviously invalid floating/overlapping placement where feasible without a structural-simulation framework.
-4. **Piece kit:** floor, wall, doorway wall and roof using temporary shapes. Player can select pieces, see their wood cost, place enough to form a recognizable shelter, and walk through the doorway and stand inside. Basic collision works.
-5. **Undo:** Remove a placed piece and refund its wood cost; no deleting unrelated world geometry.
-6. **Outcome:** User can finish a tiny shelter and immediately choose to revise/extend it. The scene is reusable for several short building attempts.
+1. **Enter a dedicated `Prototype_Building` scene** using the working movement and orbit camera; preserve the existing movement/combat scenes. A modest outdoor graybox area has gentle slopes, some visual terrain variation, a clear boundary representing future protected town land, and two suitable but different build sites. Use placeholder trees/rocks for atmosphere if helpful, **not** a harvesting system.
+2. **Pick a location** by walking there. Construction is unavailable on the visually indicated protected-town test footprint and available outside it on reasonable terrain. The restriction is enforced by placement rules, not just preview color.
+3. **Enter build mode** with accessible on-screen control hints. Select from a minimal cohesive kit: **foundation/floor, wall, doorway/opening, roof**. Piece orientation and size must make a walkable shelter possible with the existing character controller.
+4. **Preview and place** pieces with an understandable placement ghost, clear valid/invalid feedback, useful adjacent/edge snapping, and controlled rotation. Pieces should connect predictably on modest uneven ground. Reject obvious penetrations, isolated floating pieces and placement inside the protected footprint; do **not** implement a production structural-physics simulation.
+5. **Finish and inhabit** a little house or shelter with a real doorway and roof; walk inside and around it. Then **remove/reposition/extend** pieces using a legible edit interaction, without affecting unrelated landscape geometry.
+6. **Repeat immediately**: the player can start over or keep experimenting without relaunching the editor. The build experience is usable for several short creative attempts.
 
-## Implementation guidance
+**First-pass materials:** use **unlimited/free materials** (or a clearly identified sandbox toggle defaulted on) so that the session tests **building feel rather than wood harvesting**. This is a prototype convenience, not a decision about the final economy. Costs, wood gathering and crafting are follow-up questions.
 
-- **Prioritize build placement feel over tree effects**. Do not let animated tree-falling, advanced UI, asset imports, or tests dominate the effort.
-- Resource ownership, construction pieces and preview/placement should have understandable boundaries, but no global gameplay framework, generic inventory, item stat engine or finished assets.
-- Preserve the existing Input System; inspect how left click and cursor recapture interact with the locally added combat input before assigning build controls. Make controls visible in a small help legend.
-- Use a few reusable piece definitions with clear snap points; avoid one-off hardcoding each piece in a giant manager. No decision about the final Valheim structure system is being made here.
-- Aim for the **complete shelter loop in one implementation assignment**. Codex can make and test internal substeps independently without repeatedly asking the user to verify individual scripts.
-- If a serious technical blocker prevents the whole experience, stop after reporting the obstacle and a playable subset; do not spend an hour retrying the same Unity command.
+## Acceptance quality bar
 
-## Explicitly deferred
+- The player can make a **recognizable enclosed shelter**, walk inside it, and choose to alter the structure.
+- Aiming, snapping and rotation should make common connections easy. Invalid placement should explain itself clearly enough to avoid guesswork.
+- At least **two outdoor building spots** invite different arrangements; the ground should not look like a flat grid disguised as wilderness.
+- The protected-town test area cannot be built upon, while ordinary non-protected ground can.
+- All controls needed to finish the exercise are discoverable within the scene.
+- Avoid claiming success from merely instantiating cubes or displaying placement debug text.
 
-Structural integrity/support, damage/decay/repair, realistic tree physics, detailed axe animations, crafting menus, weather/food, persistent save/load, multiplayer, world generation, combat, classes, levels, loot, blacksmith, polish.
+## Engineering guidance and boundaries
 
-## Verification / finish line
+**Read first:** `AGENTS.md`, `docs/STATE.md`, `docs/02_DECISIONS.md`, `docs/09_ARCHITECTURE_GUARDRAILS.md`, and the related strategy. Inspect the actual project, packages and local source **before** making implementation decisions.
 
-Codex: one consolidated Unity compile/scene/Play Mode pass where accessible; automatic correctness checks of wood cost/refund, placement validity and snap behavior when practical. **Do not ask the user to validate arithmetic**. Avoid opening Unity batch mode on the same open project. Check that the original movement scene is preserved. Report what works and what could not be verified, list changed files and git status, then **STOP**.
+**Mandatory local safety gate:** inspect `git status`, then safely checkpoint the **reported uncommitted Prototype_Combat scene/scripts and locally edited docs**, taking care **not to stage, discard or alter the three unrelated `Assets/Editor` deletions**. GitHub documentation changed independently; fetch/reconcile carefully. **Never blindly reset, checkout or pull over local uncommitted changes.** If you cannot safely reconcile them, report the precise blocker and stop.
 
-The director plays and evaluates three things:
-1. Does placing and snapping pieces feel precise and pleasant, or fiddly?
-2. After finishing the shelter, do you want to keep building? What stopped you?
-3. Is collecting wood pleasant context for construction, or does it interrupt the fun?
+**Short technical feasibility check, folded into the assignment:** choose a **prototype** terrain approach consistent with later **surface flatten/raise/lower**, collision and saved terrain modifications. Heightfield/Unity Terrain may be a candidate, but neither a terrain framework nor a procedural world engine is selected by this brief. Record important constraints in a short note.
 
-Review/commit the accepted result according to the current Git workflow; never bundle unrelated local changes.
+- Reuse existing Input System and controller where practical; resolve any local combat/build input conflict without rewriting combat.
+- Separate basic piece definitions, placed-instance data/identities, placement/validation rules and input/preview enough that subsequent saving, terrain editing and co-op tests can build on them. **Do not** create a large general-purpose manager/inventory/networking framework.
+- Favor clear snap points and alignment over complex physics. Expose basic rotation/snap adjustments for playtesting only where useful.
+- Implement lightweight local construction removal; do not alter source assets or other players' world objects (not yet implemented).
+- Preserve the original project/scenes. `BRIEF_01` does **not** authorize an authored town, procedural islands, terrain sculpting tools, world saves, co-op, full structural collapse, harvesting/wood costs, advanced NPCs, raids, bosses, combat overhaul or polished art.
+- **Scope is the complete playable shelter experience, not one script per ticket.** Codex should handle connected internal tasks without repeatedly asking the director to check technical plumbing.
+
+## Verification and stop condition
+
+**Codex owns technical correctness:** one focused compile/import + targeted Play Mode/automated-check pass where tools permit, checking placement-validity boundaries, connected snaps, piece removal, collisions/doorway and the protected area. Do not invoke headless Unity against an already-open project; do not repeatedly rerun the same blocked test. If verification is blocked, report what was attempted and why, once.
+
+**Director owns gameplay judgment:** one meaningful session assessing:
+
+1. *Which site did I want to build on, and why?*
+2. *Did snapping/rotation/removal feel natural enough that I wanted to build more?*
+3. *Could I create something of my own, or did the rules fight me?*
+
+When the scope is implemented or a genuine blocker is found, deliver **one concise final report**: playable outcome, changed files, verification evidence/limitations, remaining issues, and exact Git status. **Then stop.** Do not keep working while waiting for a human playtest.
+
+## Next stage — explicitly outside this brief
+
+After evaluating this experience: small-scale ground flatten/raising, understandable structural support constraints, saving/reloading buildings and terrain, then an early two-person world-state checkpoint. **Do not implement these preemptively.**
