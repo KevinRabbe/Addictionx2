@@ -12,6 +12,13 @@
 
 **Why:** Evaluate whether constructing a home and gathering resources is something the player wants to keep doing, instead of spending more sessions on a capsule-vs-dummy technical test.
 
+## Latest design clarification (director, 2026-11-14)
+
+- **Division of testing:** Codex should independently verify **functional correctness** where tools allow; the director evaluates **gameplay feel**, satisfaction, and whether the result fits the vision. Human playtesting is not a substitute for Codex checking basic functionality.
+- **Home direction:** the suggested role of a home (chosen place, player-built and expandable, persistent, useful to adventures, eventually shared) is **broadly aligned, but NOT fully specified or approved point by point**. Do not freeze exact building rules or home benefits from this tentative description.
+- **Sequence:** establish the **world/home/building foundation first**; introduce the RPG experience **afterward**, while still protecting future integration with combat, loot and progression. No final order among terrain, construction, gathering and persistence has yet been decided.
+- **Planning gate:** do not treat `BRIEF_01_SHELTER.md` as an authorized implementation task until the world/building approach and risk boundaries have been considered sufficiently. It is a candidate brief, not a green light to start coding.
+
 ## Current state
 
 - **Available on GitHub:** `Prototype_Movement` scene and controller/camera, playtested and committed (`3feb669`). User liked WASD and orbit camera.
