@@ -31,7 +31,8 @@ This is **not** a Valheim mod and is **not** a plan to clone Metin2 or New World
 14. **[docs/12_STARTING_REGION.md](docs/12_STARTING_REGION.md)** — confirmed starting-town principles, two entry routes, the hill as a landscape boundary, building outside town and unresolved spatial design.
 15. **[docs/13_WORLD_BUILDING_STRATEGY.md](docs/13_WORLD_BUILDING_STRATEGY.md)** — proposed sequence for playable building, terrain, persistence, early co-op checks and generated-world integration; **not an approved Codex task**.
 16. **[docs/14_BUILDING_KIT_B01.md](docs/14_BUILDING_KIT_B01.md)** — approved B01 prototype-quality **actual 3D wood piece kit** and Unity prefab/snap requirements; not final art.
-17. **[AGENTS.md](AGENTS.md)** — operating instructions for Codex and future agents.
+17. **[docs/15_B01_VERIFICATION_GATES.md](docs/15_B01_VERIFICATION_GATES.md)** — Codex's automated B01 mesh, snapping, scene, Play Mode and project-safety checks before human playtesting.
+18. **[AGENTS.md](AGENTS.md)** — operating instructions for Codex and future agents.
 
 ## Single source of truth
 

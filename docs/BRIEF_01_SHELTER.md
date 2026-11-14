@@ -4,7 +4,7 @@
 **Status:** **Director-approved scope for the next Codex implementation assignment (2026-11-14); implementation NOT yet launched.** Begin with the local Git safety/reconciliation gate below before editing Unity gameplay files.  
 **Primary question:** *Does finding a place in the world and freely building a small shelter feel intuitive, inviting, and creatively satisfying?*
 
-Related: [B01 prototype wood 3D kit](14_BUILDING_KIT_B01.md) (**required part of this brief**), [world/building strategy](13_WORLD_BUILDING_STRATEGY.md), [current state](STATE.md), [confirmed decisions](02_DECISIONS.md).
+Related: [B01 prototype wood 3D kit](14_BUILDING_KIT_B01.md) (**required part of this brief**), [automated verification/handoff gates](15_B01_VERIFICATION_GATES.md) (**required before the director playtests**), [world/building strategy](13_WORLD_BUILDING_STRATEGY.md), [current state](STATE.md), [confirmed decisions](02_DECISIONS.md).
 
 ## Player-facing outcome — one complete playable experience
 
@@ -51,7 +51,7 @@ The environment should feel like the edge of a place one could live in, not a fe
 
 ## Verification and stop condition
 
-**Codex owns technical correctness:** one focused compile/import + targeted Play Mode/automated-check pass where tools permit, checking 3D mesh imports/prefabs, roof–gable joins, placement-validity boundaries, connected snaps, piece removal, collisions/doorway and the protected area. Do not invoke headless Unity against an already-open project; do not repeatedly rerun the same blocked test. If verification is blocked, report what was attempted and why, once.
+**Codex owns technical correctness:** follow [B01 verification gates G0–G5](15_B01_VERIFICATION_GATES.md): protect local work, validate the actual 3D mesh/prefab kit, exercise snapping/placement rules in EditMode, run an automated full shelter scenario in Play Mode when tooling permits, and confirm project/scene integrity. Include truthful PASS/FAIL/BLOCKED evidence. One focused verification run with at most one actionable correction/retry, not an indefinite testing marathon. Do not invoke headless Unity against an already-open project; do not repeatedly rerun the same blocked test. If verification is blocked, report what was attempted and why, once.
 
 **Director owns gameplay judgment:** one meaningful session assessing:
 
