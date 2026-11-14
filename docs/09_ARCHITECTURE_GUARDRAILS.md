@@ -41,7 +41,7 @@ This document captures architectural concerns that could cause future rewrites, 
 - **Dungeon state split:** discovered, persistent POIs should keep their once-generated layouts; explicitly repeatable dungeons may generate new layouts per run. Keep world-space entrance/POI identity separate from a run's transient layout/encounter state if this split becomes part of implementation. Actual instancing is not selected.
 - **Fast travel:** progression may eventually relax restrictions; require evidence that it does not invalidate long-distance travel or item transport gameplay.
 - **Respawn:** player-owned/assigned bed with starting-town fallback; handle invalidated beds in later save/co-op tests.
-- **Raids:** **open question**, including existence and frequency. No auto-spawn raid mechanic may be presumed from the Valheim inspiration; if pursued, consider warning, frequency, absence/offline safety and whether structures take lasting damage.
+- **Raids (explicitly deferred):** the director chose to evaluate whether these are needed only after meaningful playtests, potentially alongside co-op. **Do not implement or pre-architect scripted raids now**, and do not assume rare raids, settings, or frequencies. If future tests justify them, investigate warnings, online/offline safeguards, frequencies, structure damage and ownership.
 - **Building permissions:** world setting for shared vs protected structures is **tentative**; don't freeze per-object ownership or permission infrastructure based solely on “I guess C”.
 
 ## 1. Networking and authoritative state

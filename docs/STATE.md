@@ -49,10 +49,10 @@
 - **#19 confirmed direction:** stable **once-generated dungeons** for persistent world locations; **freshly generated layouts** can serve highly repeatable runs. Dungeon taxonomy and runtime representation remain open.
 - **#20C confirmed:** unlockable improvements to fast-travel restrictions, while preserving reasons to sail.
 - **#21A confirmed:** respawn at an assigned bed, otherwise starting town.
-- **#22 open:** the director is unsure whether base raids should exist and how often; discuss rare/optional raids with protections for peaceful building and co-op absence, but do not lock any scheme.
+- **#22 explicitly deferred:** the director chose **D — decide whether raids are needed only after later building/combat playtests, possibly during co-op testing**. No base-raid feature, optional toggle, schedule, or threat event is approved or in immediate scope.
 - **#23C tentative:** world-level configurable shared building vs ownership permissions, not yet an approved network permission system.
 
-**Current conversation focus:** resolve the *player experience* of raids before committing any raid subsystem. No Codex task is authorized.
+**Current planning focus:** raids are deliberately **parked**, not the next design blocker. Shift to evaluating world/building architecture and a meaningful playable foundation without assuming raid mechanics. No Codex task is authorized from these discussion notes.
 
 ## Starting-region design reference
 
