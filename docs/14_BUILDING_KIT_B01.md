@@ -31,6 +31,17 @@ Suggested sizing convention for the **prototype only**: **1 Unity unit = 1 meter
 
 **Future optional kit (NOT part of B01):** steps/stairs, dedicated doors, corner roof variants, half post/beam, windows, different roof pitches, ramps, decorative timber styles. Add only if early player testing identifies a necessary piece, not as blanket scope creep.
 
+## Piece identity and shape are part of the acceptance criteria
+
+**Prioritize shape and silhouette over surface decoration.** It is acceptable to use plain flat materials and no detailed textures, so long as the pieces are **visually distinguishable, correctly proportioned and assemble into a convincing shelter**. Spending substantial B01 time on wood grain, material shaders or trim polish is not the goal.
+
+**Each kit category must have:**
+- One distinct, stable piece/category ID and unique build-menu entry/display name, mapped to the **correct prefab**. Filenames, Unity instance names and visible menu labels must agree in meaning; do not rely on filenames as the only identity test.
+- A prefab whose **actual rendered geometry matches the category**: e.g., a `Wood_Wall_2x1` really is half-height and a `Wood_GableEnd` really has a triangular roof-end shape. Distinguish all ten choices visually from normal building distance.
+- Correct transform/pivot, sensible snap targets, collision shape, and matching proportions. Use a simple test assembly and, if available, a contact sheet/silhouette preview to compare shapes side by side.
+
+**Never claim ten distinct building pieces merely because ten names exist.** The asset audit must check duplicate prefab references, repeated effective geometry, mismatched mesh shapes, swapped menu selection links and mislabeled objects. Deliberate reuse of internal plank meshes or mirrored variants is fine; an **accidentally duplicated complete piece presented as a different type is not**. See [G1 identity and silhouette audit](15_B01_VERIFICATION_GATES.md).
+
 ## Modeling and handoff requirements
 
 1. **Make actual reusable 3D mesh assets**, preferably authored in **Blender** (Blender scripting or a connected Blender tool is acceptable if available). Export meshes to a Unity-supported asset format such as FBX and keep editable source files under version control where reasonable. Do not substitute Unity cube stacks and call the kit finished. Validate the available local Blender/Unity integration instead of assuming any connector works.
@@ -47,6 +58,7 @@ Suggested sizing convention for the **prototype only**: **1 Unity unit = 1 meter
 - The character can **walk through the doorway and stand inside**, with roof and gable assembled correctly.
 - The player can **snap a roof to walls and join roof panels**, rather than placing disconnected wedges by eye.
 - Floor/half-floor, full/half-wall, posts and beams provide at least some **creative alternatives** for enclosure or framing.
+- **Every named piece has the intended silhouette and a unique working selection mapping;** no swapped, mislabeled or accidentally duplicated complete pieces. Correct roof/door/floor/wall shapes outweigh decorative polish.
 - Pieces have coherent scale, material language and silhouette. A **simple prototype-quality model is enough**; final textures, elaborate detail and weathering are out of scope.
 
 ## Process and limits

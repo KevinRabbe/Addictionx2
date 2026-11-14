@@ -21,13 +21,32 @@ For every gate distinguish **PASS**, **FAIL**, **BLOCKED** (tool/Unity/environme
 
 Use Blender's data inspection/export checks **if Blender can run**, and Unity editor asset/prefab checks after import:
 
-1. All **ten required B01 functional categories** exist as actual modeled 3D geometry and **selectable Unity prefabs**: full/half floor, full/half wall, doorway, pitched roof, ridge, gable, vertical post and horizontal beam.
+1. All **ten required B01 functional categories** exist as actual modeled 3D geometry and **selectable Unity prefabs**: full/half floor, full/half wall, doorway, pitched roof, ridge, gable, vertical post and horizontal beam. **Run the mandatory identity-and-silhouette audit below, including selection-to-prefab mapping; the correct filenames alone are insufficient.**
 2. Each prefab has a nonempty, visible mesh with reasonable scale/orientation, a valid renderer/material reference and appropriate colliders; no broken mesh refs. Geometry should read as **timber planks/framing, sloped roofing and posts**, not simple gray cube facsimiles.
 3. Normal directions, rotation/pivots, colliders and snap anchor transforms are valid; the 2 m/1 m **prototype** modules interoperate. Size and doorway clearance must be compared against the **actual controller** rather than assuming a default capsule size.
 4. Check roof slope + ridge + gable **as one assembly**. Intersections, excessive gaps and obvious overhang/collider errors need inspection in the Unity scene, not just a prefab existence test.
 5. Where editor screenshots/camera inspection are possible, capture at least **exterior, roof/gable connection and interior/doorway** views for self-review; note if no rendered scene could be observed.
 
-**Gate fails** if the house is composed only of abstract cubes, any essential category is missing/unselectable, prefabs import broken, or the roof/door geometry does not permit a usable shelter. A screenshot/render assessment is an additional check, **not a substitute for importing and placing prefabs**.
+**Gate fails** if the house is composed only of abstract cubes, any essential category is missing/mislabeled/duplicated/unselectable, a menu item instantiates the wrong piece, prefabs import broken, or the roof/door geometry does not permit a usable shelter. A screenshot/render assessment is an additional check, **not a substitute for importing and placing prefabs**.
+
+### Mandatory G1 identity and silhouette audit — NOT just prefab existence
+
+**This is a hard B01 handoff condition.** Codex must prove that the model shown/selected as a given piece **actually has that piece's shape**. Correct filenames alone do not count.
+
+1. **Exactly one registered build-menu definition per required category.** Compare a small authoritative **ten-row manifest** derived from [the B01 kit](14_BUILDING_KIT_B01.md) to the Unity piece definitions / prefabs / selection UI. Check uniqueness of **stable category ID, display name, prefab asset path/GUID and active build-menu slot**. Extra internal mesh subobjects are fine. Report **missing, duplicated, swapped, unselectable, or mislinked** categories, e.g. a "half wall" button accidentally producing the full wall prefab.
+2. **Inspect mesh silhouette *and orientation* against the expected category**, not its object name. Create a lightweight asset-audit table/Editor script that reads actual mesh bounds and/or sampled geometry after transforms and compares against the provisional dimensional profiles below. A model renamed `Wood_RoofSlope_45` that is just a flat slab **fails**.
+3. **Look for accidental identical outputs:** compare effective prefab-to-mesh references and, where practical, mesh/geometry signatures plus local transforms. **Flag two different categories that render the same assembled piece**, especially floor-full vs floor-half, wall-full vs wall-half, roof vs ridge, post vs beam. Do not naively fail valid *shared submeshes* (e.g. repeated wooden planks), intentional mirrored variants, or prefab instances reusing approved geometry with distinct orientations; review those cases explicitly.
+4. **Make shape-specific checks**, including:
+   - Full floor is a broad horizontal **2 × 2 m** plank platform; half floor is a **1 × 1 m** platform (not a duplicate scaled by incorrect importer settings).
+   - Full wall is visibly **2 m tall** and half wall **1 m tall**, in the agreed module orientation.
+   - Doorway wall includes an **actual open passage**, not merely a dark-painted rectangle or invisible blocking collider; verify character-sized passage.
+   - Roof slope has a **real inclined profile** and joins the gable/ridge; ridge piece follows the roof apex, not a repurposed floor.
+   - Gable actually presents a **triangular roof-end silhouette** matching roof pitch.
+   - Post is primarily **vertical** and beam primarily **horizontal** in their respective intended placement poses.
+5. **Verify build-menu selection → piece definition → prefab → instantiated rendered mesh/collider** by spawning each of the ten selections and checking the resulting category ID and **geometry**, including after at least one rotation. Do not only instantiate all prefabs directly; that misses wrong UI/prefab mappings.
+6. If possible, render an **orthographic/neutral-background contact sheet of all ten distinct silhouettes**, labeled using the piece manifest and including the roof/gable assembled example. This supports visual inspection but **does not replace** the shape, identity and import checks. The user's priority is **readable form/silhouette, not polished textures/materials**.
+
+**G1 fails if** any required category is missing, duplicated or mislabeled; if two categories accidentally select the same effective piece; if geometry does not match the advertised type; or if the selection UI spawns a different model from the one tested. If tools cannot inspect meshes or the UI mapping, mark the specific subcheck **BLOCKED**, not PASS. Keep this as a **small script + focused scene check**, not a new generic asset-management framework.
 
 ## Gate 2 — Placement rules and snap math (Unity EditMode/unit tests when feasible)
 
@@ -74,7 +93,7 @@ Codex's **single final report** should contain:
 | Gate | State | Evidence | What remains unverified |
 | --- | --- | --- | --- |
 | G0 workspace safety | PASS / FAIL / BLOCKED | Git status, checkpoint description | ... |
-| G1 3D kit and import | PASS / FAIL / BLOCKED | Prefab names, asset validation, rendered views if available | ... |
+| G1 3D kit identity, silhouette and import | PASS / FAIL / BLOCKED | Ten-row ID → label → prefab → mesh audit; duplicate/mislabel/missing list; actual shapes; rendered silhouettes if available | ... |
 | G2 placement/snap tests | PASS / FAIL / BLOCKED | Test count/assertion names, failures | ... |
 | G3 Play Mode shelter scenario | PASS / FAIL / BLOCKED | Scene, scenario/test result and relevant logs | ... |
 | G4 project integrity | PASS / FAIL / BLOCKED | Compile/editor status, diff summary | ... |

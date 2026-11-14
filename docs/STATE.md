@@ -58,6 +58,10 @@
 
 The director supplied a high-level **Map1-inspired starting-town sketch with two black-marked entry paths**. The town should be a safe, useful hub; players build outside it; the nearby wilderness should invite exploration; the drawn **hill marks a boundary**, not a committed gameplay landmark. **The two black marks are entrances, not dangerous biomes.** A **bottom-left area is a flexible potential NPC location** (mount-related only if needed; otherwise any suitable NPC). Detailed route roles and terrain geometry are open. See [12_STARTING_REGION.md](12_STARTING_REGION.md). **This is a design statement, not authorization to start a Codex scene task.**
 
+## B01 piece-identity / silhouette priority — confirmed
+
+The director specifically wants Codex to verify **each modeled piece is the shape it claims to be**, with **no mislabeled, swapped, accidentally duplicated or incorrectly linked pieces**. The main visual standard is **clear shape and silhouette, not surface-art polish**. See the mandatory **G1 identity-and-silhouette audit** in [15_B01_VERIFICATION_GATES.md](15_B01_VERIFICATION_GATES.md), cross-checked with the ten-category kit [14_BUILDING_KIT_B01.md](14_BUILDING_KIT_B01.md). No actual assets/tests have been run by this update.
+
 ## B01 verification plan — approved, not yet run
 
 [15_B01_VERIFICATION_GATES.md](15_B01_VERIFICATION_GATES.md) describes **Codex's pre-handoff checks**: local Git safety → real 3D mesh/prefab validation → focused snap/placement tests → automated Play Mode shelter construction and doorway traversal → scene/compile integrity → truthful evidence report. **No tests have been executed by this documentation update**. Director playtests only after evidence-based handoff; gameplay feel remains a human judgment.
