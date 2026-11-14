@@ -34,7 +34,7 @@ The sequence below is a **working recommendation**. Proceed only when the prior 
 
 Use a **small, believable outdoor test region**, not a featureless platform and not the final island. Include modest uneven terrain, visual paths/outlines indicating an off-limits town location, and at least two appealing build spots. Reuse the known-good player controller.
 
-Player walks into the landscape, chooses a site, **aims/rotates/snaps** a small set of floors/walls/doors/roofs, enters the resulting shelter, then changes it by adding/removing pieces. A clear ghost, grounded placement, meaningful snapping and understandable errors matter more than exact art.
+Player walks into the landscape, chooses a site, **aims/rotates/snaps a small actual 3D-modelled wood kit** (floors/walls/open doorways/pitched roof/gables/posts/beams), enters the resulting shelter, then changes it by adding/removing pieces. **The player-built shelter cannot be mere gray cubes;** the outdoor terrain may still be placeholder art. See [B01 wood kit](14_BUILDING_KIT_B01.md). A clear ghost, grounded placement, meaningful snapping and understandable errors matter more than exact art.
 
 **Test construction with plentiful/free temporary materials at first if gathering distracts from placement feel.** Add a small wood-gathering reason only when it helps answer the next gameplay question. This is now captured by the approved-but-unlaunched `BRIEF_01_SHELTER.md`; the director should experience enough activity to decide whether building is enjoyable.
 

@@ -112,6 +112,13 @@ The director replied: **18A, but building must remain creatively free with some 
 
 **Cross-system caution:** structural support must operate after terraforming and across saves; generated world dungeons and repeated-run dungeons need distinct state/lifecycle concepts; bed respawning, raid activity and permissions interact with host authority and whether owners are online. These remain architecture considerations, **not permission to launch Codex work**.
 
+## CONFIRMED — B01 needs actual prototype wood models (2026-11-14)
+
+- Director clarified and approved that the **first building gameplay slice must include actual reusable, low-detail 3D wood construction meshes**, **not merely gray cubes/abstract primitive building blocks**. The outdoor environment may still be grayboxed.
+- Essential visual qualities are **correct modular proportions, readable wooden framing/planks, true pitched roof shapes, sensible gable/roof joins, usable doorway, beams/posts and the appearance of a wooden house**. This is **prototype art**, not final texture/sculpt/weathering/destruction asset work.
+- A **small, coherent wood kit** is approved as part of the existing B01 playable milestone; the specific ten-category working kit and 2 m/1 m dimensional targets in [14_BUILDING_KIT_B01.md](14_BUILDING_KIT_B01.md) are **implementation/test targets, adjustable after playing**, not permanent global construction rules.
+- Create actual 3D mesh models and usable Unity prefabs before claiming the shelter milestone playable. **No Codex/art run has been started from this design update.**
+
 ## CONFIRMED — starting-region spatial principles (2026-11-14)
 
 - Director shared a high-level **Map1-inspired town sketch**, and explicitly clarified that **two black markings represent two paths for entering the town**. They should **not** be interpreted as dark/hostile regions.

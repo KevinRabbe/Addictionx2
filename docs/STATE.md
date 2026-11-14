@@ -58,6 +58,10 @@
 
 The director supplied a high-level **Map1-inspired starting-town sketch with two black-marked entry paths**. The town should be a safe, useful hub; players build outside it; the nearby wilderness should invite exploration; the drawn **hill marks a boundary**, not a committed gameplay landmark. **The two black marks are entrances, not dangerous biomes.** A **bottom-left area is a flexible potential NPC location** (mount-related only if needed; otherwise any suitable NPC). Detailed route roles and terrain geometry are open. See [12_STARTING_REGION.md](12_STARTING_REGION.md). **This is a design statement, not authorization to start a Codex scene task.**
 
+## B01 asset requirement — confirmed
+
+The director explicitly requires **prototype-quality, actual 3D wood building meshes** (not pure primitive grayboxes as build pieces) to judge what it feels like to construct a house. A small working kit covers **2 m/1 m floors and walls, doorway wall, pitched roof, ridge, gable, post and beam**, with dimensions subject to player-scale testing. The **outdoor environment may be grayboxed**. See [14_BUILDING_KIT_B01.md](14_BUILDING_KIT_B01.md). B01 now includes asset creation/import and playable snapping; **no Codex/modeling run is underway**.
+
 ## First playable brief — scope approved; not yet started
 
 [BRIEF_01_SHELTER.md](BRIEF_01_SHELTER.md) now proposes **walk around a small outdoor region → choose among at least two building sites → place/snap/rotate pieces → inhabit a shelter → revise it**, with **temporary unlimited materials** to judge building feel before gathering. It includes a protected-town proxy and local work/reconciliation safety. Terraforming, support physics, saving, co-op, procedural islands and gathering remain later stages. **The director has approved this scope; actual Codex execution must be started separately against the local Unity project, with the safety gate first.**
@@ -70,7 +74,7 @@ See [13_WORLD_BUILDING_STRATEGY.md](13_WORLD_BUILDING_STRATEGY.md) for a **playa
 
 - **Available on GitHub:** `Prototype_Movement` scene and controller/camera, playtested and committed (`3feb669`). User liked WASD and orbit camera.
 - **Reported local-only, uncommitted:** `Prototype_Combat` scene/scripts and edits to `docs/04_PROTOTYPE.md` and `docs/10_ROADMAP.md`. This is a **technical smoke test**, not an enjoyable combat prototype. Preserve it safely; never overwrite local work or the three unrelated `Assets/Editor` deletions.
-- **Next approved, not yet launched brief:** [BRIEF_01_SHELTER.md](BRIEF_01_SHELTER.md). First substantial playable outcome: **choose an outdoor build site → snap/build/enter/revise a shelter**, with **temporary unlimited materials** to isolate construction feel. Before coding, preserve local uncommitted work and reconcile remote documentation.
+- **Next approved, not yet launched brief:** [BRIEF_01_SHELTER.md](BRIEF_01_SHELTER.md) + [actual 3D wood kit spec](14_BUILDING_KIT_B01.md). First substantial playable outcome: **choose an outdoor build site → snap/build/enter/revise a recognizable low-poly wooden shelter using real meshes**, with **temporary unlimited materials**. Before coding, preserve local uncommitted work and reconcile remote documentation.
 - Older documentation may still say `combat next`; **this state note overrides the old sequencing**, not the mechanics or architecture decisions in the ledger.
 
 ## Working direction after the shelter
