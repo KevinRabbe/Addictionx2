@@ -2,7 +2,7 @@
 
 **Project stage:** Ugly prototype / pre-gameplay implementation  
 **Engine:** Unity 6.6 (6000.6.9f1), Universal Render Pipeline, C#  
-**Development style:** Codex-assisted, test-first small iterations  
+**Development style:** Director-led playable milestones, Codex implementation, focused automated verification  
 **Design snapshot:** 2026-11-13
 
 ## What we are building
@@ -26,7 +26,9 @@ This is **not** a Valheim mod and is **not** a plan to clone Metin2 or New World
 9. **[docs/09_ARCHITECTURE_GUARDRAILS.md](docs/09_ARCHITECTURE_GUARDRAILS.md)** — architecture risks, current preferences for persistence, stat/class/data layering, hybrid world generation and Valheim-like building.
 10. **[docs/10_ROADMAP.md](docs/10_ROADMAP.md)** — proposed path from graybox prototype to a tiny playable game combining survival/building and combat/RPG progression.
 11. **[docs/11_PLAYABLE_WORKFLOW.md](docs/11_PLAYABLE_WORKFLOW.md)** — revised gameplay-first workflow: meaningful playable outcomes, batched implementation, automated technical checks, and fewer manual handoffs.
-12. **[AGENTS.md](AGENTS.md)** — operating instructions for Codex and future agents.
+12. **[docs/STATE.md](docs/STATE.md)** — CURRENT one-page milestone, user priority, local safety, and next loop; read first when doing development work.
+13. **[docs/BRIEF_01_SHELTER.md](docs/BRIEF_01_SHELTER.md)** — first building-first Codex brief: gather wood and build a shelter.
+14. **[AGENTS.md](AGENTS.md)** — operating instructions for Codex and future agents.
 
 ## Single source of truth
 
@@ -36,8 +38,8 @@ When a decision changes, update the decision ledger and the affected documentati
 
 ## Current next milestone
 
-**Prototype 0.01a movement/camera is implemented, human-playtested, and committed to `main` as `3feb669`.** The player reported that WASD movement and the third-person camera feel good. The lowest step is traversable; the two higher steps are not, and that is accepted for now. The next milestone is [Prototype 0.02a combat experiments](docs/04_PROTOTYPE.md). The [longer-term proposed roadmap](docs/10_ROADMAP.md) intentionally brings survival/building and early persistence/network risk tests forward rather than treating them as distant afterthoughts.
+**Director decision, 2026-11-14:** Build and live in the world FIRST. See **[STATE.md](docs/STATE.md)** and the first playable building brief **[BRIEF_01_SHELTER.md](docs/BRIEF_01_SHELTER.md)**. This changes the next development track; combat/RPG remains important and will return. Existing movement/camera is human-tested and committed as `3feb669`. The 0.02a capsule/dummy combat spike is reported as **local uncommitted work** and must be safely preserved before switching tracks. Some older roadmap/prototype sections still say combat is next; those descriptions record previous planning and do not override the newer user priority.
 
 ## Repository notes
 
-The GitHub repository is **KevinRabbe/Addictionx2** (private at snapshot). Local Windows Unity project path reported as **F:\Addiction²\Addiction²**. The local project and the remote need to be synchronized by Git; changes made on GitHub are not automatically present on disk.
+The GitHub repository is **KevinRabbe/Addictionx2** (public as observed on 2026-11-14; check whether intentional). Local Windows Unity project path reported as **F:\Addiction²\Addiction²**. The local project and the remote need to be synchronized by Git; changes made on GitHub are not automatically present on disk.

@@ -2,7 +2,7 @@
 
 ## Mandatory first steps in every new task/session
 
-1. Read README.md, docs/01_VISION.md, docs/02_DECISIONS.md, docs/04_PROTOTYPE.md, **and docs/11_PLAYABLE_WORKFLOW.md**. The new workflow overrides older instructions about the *size of the work unit*; the design decision ledger remains authoritative.
+1. **Read docs/STATE.md FIRST** for the current milestone, then `docs/02_DECISIONS.md` for authoritative game-design decisions, and the **current brief** (initially `docs/BRIEF_01_SHELTER.md`). Consult `README.md` and `docs/01_VISION.md` for product direction, and `docs/11_PLAYABLE_WORKFLOW.md` for workflow. Avoid loading the entire documentation archive every task.
 2. Read the relevant sections of docs/03_DESIGN_NOTEBOOK.md and docs/05_DEVELOPMENT.md. Consult docs/08_CONVERSATION_COVERAGE_AUDIT.md when reconstructing context, making a design change, or checking if earlier user corrections are captured. Before introducing inventory, class logic, world generation, saving or network state, read docs/09_ARCHITECTURE_GUARDRAILS.md.
 3. Inspect the current repository and Unity project state before editing. Do not guess what has already been implemented.
 4. State **one meaningful player-facing outcome** and a concrete playable acceptance scenario. You may implement several tightly related components within that slice (input, character behavior, enemy response, temporary art/animation, UI) **without returning to the user after every technical substep**. Avoid unrelated features and framework-building.
@@ -17,7 +17,7 @@
 - Never silently promote an example number, weapon, NPC, class, dungeon, upgrade formula, video technique, or hypothetical feature into a requirement.
 - We're building an **original game**, not a Valheim modification.
 - Valheim is the survival/world foundation; Metin2 supplies RPG progression; New World mainly inspires a small profession overlay.
-- **Milestone 0.01a (movement and camera) is completed and committed.** The next player-facing goal is a short **interactive combat encounter**. The current local 0.02a capsule+dummy prototype is a **technical spike awaiting safe preservation**, not a successful combat-feel milestone. Do not mistake its debug overlay for gameplay.
+- **Milestone 0.01a (movement and camera) is completed and committed.** The director chose **building and living in a world as the first substantial gameplay loop** on 2026-11-14. The next planned task is `docs/BRIEF_01_SHELTER.md`; its playable objective is gathering wood and building a small shelter, prioritizing construction feel. The existing local 0.02a capsule+dummy combat code is an **uncommitted technical spike to preserve safely**, not a validated combat experience. Combat and RPG progression remain in the game.
 - Classes affect combat identity, **not** the right to build, farm, mine, explore, or craft. Solo viability for every class is a requirement.
 - Hard level restrictions for dungeons and mandatory support roles contradict the design.
 - The specific DSS/FKS weapon is **one possible item among many**, not the cornerstone of item design. Ordinary sword bonuses must not be arbitrarily restricted to particular sword models.

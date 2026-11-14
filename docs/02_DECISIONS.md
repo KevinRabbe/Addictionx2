@@ -50,6 +50,13 @@
 - Keep combat experiments minimal: simple attack vs target first, then an enemy that can respond, followed by iterations on timing, impact, defensiveness and group fights. Do **not** lock weapon/class skill ownership or full combat architecture yet.
 - Decide enemy density/variety, character skill vs weapon skill behavior, gear progression and inventory implementation through later tests rather than overplanning.
 
+## CONFIRMED — revised next development priority (2026-11-14)
+
+- **The director explicitly chose “building and living in a world” as the first gameplay loop to develop and evaluate.** This supersedes the *order* that said combat experiments must come next after movement; it does **not** downgrade combat, loot, classes or RPG progression in the finished game.
+- **Interpretation:** the older, confirmed statement that fighting feel matters more than further **optional movement polishing** still stands. It did not imply that building should wait behind combat.
+- **Working first playable brief:** gather one wood resource, build a small shelter with connected/snapping pieces, and enter it. This is a **proposed implementation milestone**, not approval of specific tree physics, final building formulas, save/network architecture, a 30-minute content target, or permanent construction rules. See `docs/STATE.md` and `docs/BRIEF_01_SHELTER.md`.
+- **Process correction:** user rejected an hour-long capsule/dummy HP smoke test as a meaningful gameplay milestone. Technical correctness belongs in routine automated checks; playtests should focus on actual player experience. Exact optimal Codex task scope remains to be calibrated by outcomes.
+
 ## NEW CLARIFICATIONS — architecture discussion (2026-11-13)
 
 - **World/character saves:** Character/world persistence is an important decision, **but not needed in the first movement prototype**. The user explicitly **does not want unrestricted Valheim-style option A** (one character freely taking all equipment/progression between any worlds). **World-bound characters (B)** or a **restricted/configurable hybrid (C)** are candidates. **Reason explicitly confirmed:** unrestricted carry-over of high-level characters/equipment into a fresh friend-group world could immediately destroy the fun and sense of shared progression for the other players; this is a core experience protection, not merely a technical anti-cheat concern. Do **not** choose B vs C without further discussion or playtest; define before serious persistent progression.
