@@ -35,6 +35,14 @@
 
 **Confirmed:** Valheim-style outdoor ground editing (dig/lower, raise, flatten and reshape) is intended, including for home-building and landscaping. **Do not assume voxel tunneling/caves** from this decision. Generated landscape edits must ultimately integrate with **persistent saves and co-op world state**; exact terrain representation, limits and tools remain undecided. The director asked to **batch 5–10 high-impact map/world design questions** to speed decisions. This is still design/planning, **not** a Codex implementation assignment.
 
+## World decisions 10–17 — director's batch (2026-11-14)
+
+**Confirmed gameplay targets:** **finite large world (#10A)**, **surface-only terrain shaping rather than voxel tunneling (#11A)**, **protect essential towns/NPC sites/dungeon entrances (#12B)**, **freedom to build nearly anywhere else (#13A)**, **new characters appear in the starting town (#15A)**, **unlockable fast travel (#16B)**, and **renewable trees with generally finite individual ore deposits (#17A)**.
+
+**Preferred experiment, not hard production commitment:** **procedurally assembled dungeons/ruins/other POIs (#14B)** are appealing to the director. Preserve the **authored recurring Map1-style starting town**; explore modular-authored components and generated layouts for other locations rather than forcing all landmarks to be random.
+
+**High-risk intersections:** persistence of terrain edits and built structures, protected-site borders, stable identities for generated POIs, availability of ore in long-lived co-op worlds, and not trivializing sailing with fast travel. No specific tools/frameworks, sizes, protection radii, portal restrictions or regeneration formulas have been authorized; this is still world/building design, not a Codex task.
+
 ## Starting-region design reference
 
 The director supplied a high-level **Map1-inspired starting-town sketch with two black-marked entry paths**. The town should be a safe, useful hub; players build outside it; the nearby wilderness should invite exploration; the drawn **hill marks a boundary**, not a committed gameplay landmark. **The two black marks are entrances, not dangerous biomes.** A **bottom-left area is a flexible potential NPC location** (mount-related only if needed; otherwise any suitable NPC). Detailed route roles and terrain geometry are open. See [12_STARTING_REGION.md](12_STARTING_REGION.md). **This is a design statement, not authorization to start a Codex scene task.**

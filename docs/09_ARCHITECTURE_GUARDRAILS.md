@@ -25,6 +25,16 @@ This document captures architectural concerns that could cause future rewrites, 
 
 **Not implied:** voxel caves, freeform undercuts and tunnels, unlimited depth, a specific Unity terrain API, global real-time terrain regeneration or fixed terraforming costs. These are not approved by the surface-editing decision.
 
+## New world boundaries and POI direction (2026-11-14)
+
+- **Finite generated world:** choose a finite extent, without locking a specific radius or mandatory loading implementation.
+- **Editable surface terrain:** lower, flatten and raise height-based ground; **no requirement for full voxel underground tunnels or caves**.
+- **Site protection:** building **and terrain editing** must recognize town, NPC, dungeon entrance and other essential-site exclusion/permissions boundaries. Do not treat town building restrictions as only a placement-UI concern.
+- **Freely chosen building sites outside those limits:** construction should accommodate variable generated ground and player editing.
+- **Experimental procedural POIs:** the director likes assembled/variable dungeon/ruin layouts. The **starting town remains authored**. POI identifiers, repeatable seeded assembly, navigation/gameplay checks, persistence and quest/boss semantic anchors matter before investing in procedural dungeon generation; no algorithm or content mix is yet selected.
+- **Travel and resources:** progression-unlocked fast travel must be balanced against island exploration/sailing; renewable wood with mostly finite ore deposits requires planning for years-long shared saves without exhausting essential progression.
+- **Initial character arrival:** start in the handcrafted town, distinct from any future respawn/rejoin behavior.
+
 ## 1. Networking and authoritative state
 
 A co-op game should plan who has authority over **combat outcomes, loot creation, item ownership, building placement and saves**, even if networking arrives later. A **host/server-authoritative approach** is a candidate, not an approved framework. Do not write every eventual multiplayer mechanic assuming a single global local player; keep input, simulation and visual representation separate where it is cheap.

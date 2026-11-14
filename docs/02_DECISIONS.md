@@ -84,6 +84,21 @@
 - **Scope clarification:** this decision does **not** automatically require full voxel terrain, caves, horizontal tunnels or arbitrarily deep excavation. Those are materially different technical/gameplay questions that remain open. Terrain depth/height limits, materials, tool unlocks, building protection and costs are also unchosen.
 - Terrain edits in shared worlds must ultimately survive saving and reloading, and should not be overwritten by procedural regeneration. The technical representation/network authority is to be investigated before choosing production architecture.
 
+## CONFIRMED — world and construction choices 10–17 (2026-11-14)
+
+**Director answered a batch of eight world-design questions:** `10A, 11A, 12B, 13A, 14B ("would be cool"), 15A, 16B, 17A`. Keep **#14 as a preferred experimentation direction**, not a fixed content-generation implementation.
+
+- **#10 A — Large, finite world (confirmed):** each generated world has an explorable extent/boundary rather than expanding infinitely. Actual area, edge presentation, streaming and coordinate scheme are undecided.
+- **#11 A — Surface-based terrain deformation (confirmed):** digging/lowering, flattening, raising and shaping land, without an initial requirement for voxel caves, freeform underground tunnels or undercuts. This narrows Decision #9 without selecting a specific terrain representation or depth limit.
+- **#12 B — Protect important authored/critical sites (confirmed):** the starting town, relevant other NPC settlements, dungeon entrances and selected special locations should prohibit disruptive player building and terrain alteration as appropriate. Protected footprints/safety margins and possible exceptions remain undecided.
+- **#13 A — Build almost anywhere else (confirmed):** outside protected areas, players should be able to select their own workable construction locations across varied terrain, rather than needing designated housing plots. Terrain feasibility, structural mechanics, water placement and permissions remain open.
+- **#14 B — Procedurally assembled POIs (preferred to experiment):** director is interested in procedural assembly/variation of dungeons, ruins and other suitable discoverable locations rather than exclusively fixed authored layouts. **The recognizable starting town remains deliberately handcrafted**, and important quests/boss encounters may still require authored components. Decide later which types of POIs use modular/hand-authored rooms versus generated layout, and validate navigability, quality and save identity before a production system.
+- **#15 A — New characters start inside the town (confirmed):** first entry should begin in the safe Map1-inspired NPC hub. Rejoining/spawn after death, multiplayer spawn handling, class selection and tutorial behavior remain open.
+- **#16 B — Unlockable fast travel (confirmed direction):** fast travel becomes available through exploration/progression, rather than being freely available immediately or relying solely on settlement travel NPCs. Network, destination placement, portal vs NPC mechanism, inventory restrictions and balancing against sailing are not yet decided.
+- **#17 A — Partially renewable resources (confirmed):** trees may regrow or be replanted, while valuable ore deposits are generally **finite at each deposit**. Long-lived shared-world access to ores (exploration, alternate sources, etc.) must be evaluated; exact regrowth methods, respawn schedules and ore sources are open.
+
+**Shared implications:** terrain changes and player constructions must persist across save/load and eventual co-op; the protection system must be respected by both building and terrain-edit tools; procedurally generated POIs must not regenerate over existing player/world state. These are design constraints, **not Codex implementation instructions or selected frameworks**.
+
 ## CONFIRMED — starting-region spatial principles (2026-11-14)
 
 - Director shared a high-level **Map1-inspired town sketch**, and explicitly clarified that **two black markings represent two paths for entering the town**. They should **not** be interpreted as dark/hostile regions.
