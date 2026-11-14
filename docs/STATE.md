@@ -27,9 +27,9 @@
 
 **Preference, not final lock:** the director favors **Option A: islands and oceans**, and wants to experiment with that world structure. A large-continent hybrid (Option C) is less attractive partly because the director expects it would make **mounts necessary for overland travel**. Do not add mounts, boats or a fixed archipelago algorithm from this preference alone. **World decision #3 confirmed:** a **medium-to-large starting island (Option B)**, with enough room for early exploration and building without needing to sail. Exact size, sailing timing and world geography remain to be tested. **World decision #4 confirmed:** the handcrafted town is **inland but relatively near the coast (Option C)**; walking into wilderness and finding the sea should be possible without making the town itself coastal. **World decision #5 confirmed:** the **handcrafted town remains recognizable across generated worlds**, but its suitable inland-near-coast placement and surrounding landscape can vary with the seed (Option B). Integration/terrain-blending method is open. **Next design question:** how should environmental biomes and Metin2-style character/enemy level danger coexist across one open world?
 
-## World discussion 6 — biome danger still being refined
+## World decision 6 — consistent biome danger confirmed
 
-The director liked **Valheim's biome-based difficulty (A)** but also leaned toward **hybrid environmental biomes with varied enemy/region/POI challenges (C)**. Working interpretation: biome provides a *readable baseline* and specific locations can add tougher challenges. **Not fully locked** until the relationship between biome and local enemy levels is clear. No Codex task is authorized.
+**Confirmed:** comparable instances of the same biome across different islands should have a **recognizable, generally consistent baseline enemy difficulty** (director chose Option A). Metin2-inspired elite enemies, camps, bosses, and dungeons can provide **signposted exceptional challenges** without silently changing ordinary biome difficulty by island. No specific enemy levels, biome roster, scaling, or procedural implementation is approved. **Next question:** how many and which difficulty tiers should be reachable on the starting island before sailing? No Codex task is authorized.
 
 ## Starting-region design reference
 
