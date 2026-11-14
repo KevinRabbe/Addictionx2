@@ -17,7 +17,7 @@
 - **Division of testing:** Codex should independently verify **functional correctness** where tools allow; the director evaluates **gameplay feel**, satisfaction, and whether the result fits the vision. Human playtesting is not a substitute for Codex checking basic functionality.
 - **Home direction:** the suggested role of a home (chosen place, player-built and expandable, persistent, useful to adventures, eventually shared) is **broadly aligned, but NOT fully specified or approved point by point**. Do not freeze exact building rules or home benefits from this tentative description.
 - **Sequence:** establish the **world/home/building foundation first**; introduce the RPG experience **afterward**, while still protecting future integration with combat, loot and progression. No final order among terrain, construction, gathering and persistence has yet been decided.
-- **Planning gate:** do not treat `BRIEF_01_SHELTER.md` as an authorized implementation task until the world/building approach and risk boundaries have been considered sufficiently. It is a candidate brief, not a green light to start coding.
+- **Planning gate resolved for B01 only (2026-11-14):** the director accepted the revised outdoor shelter-building brief. **B01 is approved for a future Codex implementation run, not yet launched.** First preserve/checkpoint local combat work and reconcile GitHub documents safely; the approval does not authorize unrelated systems.
 
 ## World design decision 1 — confirmed
 
@@ -58,19 +58,19 @@
 
 The director supplied a high-level **Map1-inspired starting-town sketch with two black-marked entry paths**. The town should be a safe, useful hub; players build outside it; the nearby wilderness should invite exploration; the drawn **hill marks a boundary**, not a committed gameplay landmark. **The two black marks are entrances, not dangerous biomes.** A **bottom-left area is a flexible potential NPC location** (mount-related only if needed; otherwise any suitable NPC). Detailed route roles and terrain geometry are open. See [12_STARTING_REGION.md](12_STARTING_REGION.md). **This is a design statement, not authorization to start a Codex scene task.**
 
-## First playable brief — revised proposal (not yet authorized)
+## First playable brief — scope approved; not yet started
 
-[BRIEF_01_SHELTER.md](BRIEF_01_SHELTER.md) now proposes **walk around a small outdoor region → choose among at least two building sites → place/snap/rotate pieces → inhabit a shelter → revise it**, with **temporary unlimited materials** to judge building feel before gathering. It includes a protected-town proxy and local work/reconciliation safety. Terraforming, support physics, saving, co-op, procedural islands and gathering remain later stages. **Do not launch Codex based solely on this documentation update.**
+[BRIEF_01_SHELTER.md](BRIEF_01_SHELTER.md) now proposes **walk around a small outdoor region → choose among at least two building sites → place/snap/rotate pieces → inhabit a shelter → revise it**, with **temporary unlimited materials** to judge building feel before gathering. It includes a protected-town proxy and local work/reconciliation safety. Terraforming, support physics, saving, co-op, procedural islands and gathering remain later stages. **The director has approved this scope; actual Codex execution must be started separately against the local Unity project, with the safety gate first.**
 
 ## Proposed development strategy — planning only
 
-See [13_WORLD_BUILDING_STRATEGY.md](13_WORLD_BUILDING_STRATEGY.md) for a **playable-first sequence**: preserve/reconcile local work and check terrain constraints → outdoor shelter placement **feel** (possibly free materials first) → terraforming + persistent structures → early two-player world-state checkpoint → limited seeded region with the authored town → integrated gathering/home loop and later RPG encounters. This is **not authorization** to launch `BRIEF_01_SHELTER.md`; that candidate may be revised to focus first on placement/world feel.
+See [13_WORLD_BUILDING_STRATEGY.md](13_WORLD_BUILDING_STRATEGY.md) for a **playable-first sequence**: preserve/reconcile local work and check terrain constraints → outdoor shelter placement **feel** (possibly free materials first) → terraforming + persistent structures → early two-player world-state checkpoint → limited seeded region with the authored town → integrated gathering/home loop and later RPG encounters. **B01 has now been authorized by the director as a scoped next implementation assignment**, but the strategy's later milestones remain proposals and nothing has been launched from this conversation.
 
 ## Current state
 
 - **Available on GitHub:** `Prototype_Movement` scene and controller/camera, playtested and committed (`3feb669`). User liked WASD and orbit camera.
 - **Reported local-only, uncommitted:** `Prototype_Combat` scene/scripts and edits to `docs/04_PROTOTYPE.md` and `docs/10_ROADMAP.md`. This is a **technical smoke test**, not an enjoyable combat prototype. Preserve it safely; never overwrite local work or the three unrelated `Assets/Editor` deletions.
-- **Current proposed brief:** [BRIEF_01_SHELTER.md](BRIEF_01_SHELTER.md). The first substantial playable outcome is **choose an outdoor build site → snap/build/enter/revise a shelter**, with **temporary unlimited materials** to isolate construction feel. The brief remains an unlaunched proposal and requires careful local state preservation.
+- **Next approved, not yet launched brief:** [BRIEF_01_SHELTER.md](BRIEF_01_SHELTER.md). First substantial playable outcome: **choose an outdoor build site → snap/build/enter/revise a shelter**, with **temporary unlimited materials** to isolate construction feel. Before coding, preserve local uncommitted work and reconcile remote documentation.
 - Older documentation may still say `combat next`; **this state note overrides the old sequencing**, not the mechanics or architecture decisions in the ledger.
 
 ## Working direction after the shelter

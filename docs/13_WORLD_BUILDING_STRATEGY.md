@@ -1,7 +1,7 @@
 # World & building development strategy — first playable foundation
 
 **Proposed:** 2026-11-14  
-**Status:** **Planning proposal, not an authorized Codex task or production architecture.** This describes how to investigate the world/building foundation while honoring the confirmed game design. `docs/02_DECISIONS.md` remains authoritative for decisions.
+**Status:** **Longer-term planning proposal, not production architecture.** The director has separately approved the revised **B01 outdoor shelter brief** on 2026-11-14; B01 has **not** been launched, and later stages remain proposals. This document describes how to investigate the world/building foundation while honoring the confirmed game design. `docs/02_DECISIONS.md` remains authoritative for decisions.
 
 ## Experience we are trying to prove
 
@@ -36,7 +36,7 @@ Use a **small, believable outdoor test region**, not a featureless platform and 
 
 Player walks into the landscape, chooses a site, **aims/rotates/snaps** a small set of floors/walls/doors/roofs, enters the resulting shelter, then changes it by adding/removing pieces. A clear ghost, grounded placement, meaningful snapping and understandable errors matter more than exact art.
 
-**Test construction with plentiful/free temporary materials at first if gathering distracts from placement feel.** Add a small wood-gathering reason only when it helps answer the next gameplay question. This revises the proposed `BRIEF_01_SHELTER.md` rather than automatically launching it; the director should experience enough activity to decide whether building is enjoyable.
+**Test construction with plentiful/free temporary materials at first if gathering distracts from placement feel.** Add a small wood-gathering reason only when it helps answer the next gameplay question. This is now captured by the approved-but-unlaunched `BRIEF_01_SHELTER.md`; the director should experience enough activity to decide whether building is enjoyable.
 
 **Director evaluates:** Does placement feel easy? Can an imaginative shape emerge? Is the world inviting enough that finding a plot matters?
 
@@ -81,6 +81,6 @@ We do not define arbitrary playtime, map diameter or fixed script count as succe
 
 ## Operating rule and next authorization
 
-This document is **strategy, not an executable ticket**. Before issuing a Codex implementation brief, reconcile and preserve the local project, decide whether the existing shelter brief should be rewritten around the first *complete playable* outdoor construction experience, and state **one outcome with one acceptance scenario**. Codex implements related pieces and performs focused technical verification; the director gives gameplay feedback; then we adjust the next slice.
+This document remains **strategy, not an executable ticket**. The director has approved **B01** separately in `BRIEF_01_SHELTER.md`; it is **not yet launched**. On actual execution, Codex must first reconcile and preserve the local project, then implement **one outcome with one acceptance scenario** from B01, run focused technical verification, and stop for the director's gameplay feedback. Later stages require separate prioritization.
 
-Related: [current state](STATE.md), [design decisions](02_DECISIONS.md), [starting region](12_STARTING_REGION.md), [architecture guardrails](09_ARCHITECTURE_GUARDRAILS.md), [candidate shelter brief](BRIEF_01_SHELTER.md).
+Related: [current state](STATE.md), [design decisions](02_DECISIONS.md), [starting region](12_STARTING_REGION.md), [architecture guardrails](09_ARCHITECTURE_GUARDRAILS.md), [approved B01 brief](BRIEF_01_SHELTER.md).

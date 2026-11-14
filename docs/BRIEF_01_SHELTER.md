@@ -1,7 +1,7 @@
 # BRIEF 01 — Find a place and build a shelter
 
 **Revised:** 2026-11-14  
-**Status:** **Proposed first building/world playable milestone — ready for director review, NOT yet authorized for Codex execution.**  
+**Status:** **Director-approved scope for the next Codex implementation assignment (2026-11-14); implementation NOT yet launched.** Begin with the local Git safety/reconciliation gate below before editing Unity gameplay files.  
 **Primary question:** *Does finding a place in the world and freely building a small shelter feel intuitive, inviting, and creatively satisfying?*
 
 Related: [world/building strategy](13_WORLD_BUILDING_STRATEGY.md), [current state](STATE.md), [confirmed decisions](02_DECISIONS.md).
