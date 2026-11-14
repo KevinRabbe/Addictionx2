@@ -59,8 +59,15 @@
 
 - Director chose **Option A: consistent baseline difficulty by biome across the world**, after previously favoring a mixture of Valheim's biome danger and Metin2-style varied encounters. A biome should generally communicate a learnable danger level wherever it appears; **do not make an ordinary Dark Forest on a distant island inherently much higher-level than the same Dark Forest near the start**.
 - The earlier hybrid interest remains compatible: **identifiable exceptional locations or enemies** (camps, elites, bosses, dungeons) may exceed the surrounding biome's baseline, with appropriate visual or gameplay warning. Their presence should not make ordinary enemies unpredictable.
-- This confirms the **relative biome consistency principle**, **not** biome names, exact enemy levels, scaling formulas, level-gating rules, map distributions, enemy rosters, or the number of starting-island biomes.
+- This confirms the **relative biome consistency principle**, **not** biome names, exact enemy levels, scaling formulas, level-gating rules, map distributions, or enemy rosters. See World Decision #7 for the chosen two-tier starting-island experience.
 
+
+## CONFIRMED — starting-island biome scope (world decision 7, 2026-11-14)
+
+- Director chose **Option B: the starting island should contain a beginner-friendly biome plus the first meaningfully more dangerous biome**. This gives players room to explore, gather, build, and experience an early rise in biome difficulty **before sailing becomes necessary**.
+- The **handcrafted starting town** is located in the safer portion of the island; the second biome must be reached by normal land exploration without requiring a boat. Players should be free to choose when to explore it.
+- This is a **high-level gameplay distribution**, not approval of exactly two biome types in the complete game, biome names, level brackets, exact land proportions, hard gates, or a fixed island template. Distinct elite camps/dungeons can still be exceptional encounters within the baseline biome danger system.
+- The overall ocean/island geography remains a **preferred approach for experimentation**. Test traversal and world-building feel before fixing precise geography or generation rules.
 
 ## CONFIRMED — starting-region spatial principles (2026-11-14)
 
