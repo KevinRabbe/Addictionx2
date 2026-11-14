@@ -55,6 +55,12 @@
 - **The town must fit its location naturally**, with paths meeting the landscape. The implementation approach (terrain shaping, placement constraints, road blending, generator rules) is **not yet chosen**; do not assume a runtime pasted prefab or hand-code a fixed location.
 - Maintain the **two entrances**, inland-near-coast character and prohibition on building inside the town. The broader islands-and-oceans topology remains **preferred for experiments**, not fully fixed.
 
+## PROVISIONAL DIRECTION — biomes and enemy levels (world discussion 6, 2026-11-14)
+
+- Director responded **“ahh a but C yeah”** when choosing between (A) Valheim-style biome difficulty, (B) Metin2-style level territories and (C) hybrid biome/environment plus varied local encounters. This suggests **interest in preserving A's recognizable biome progression while leaning toward C's local enemy/POI flexibility**; do **not** treat a precise formula or zone rule as confirmed yet.
+- **Candidate synthesis for confirmation:** biomes establish a readable baseline of resources, atmosphere and danger, while subregions, enemy groups, camps, rare encounters and dungeons can present harder challenges within a biome; avoid unexplained high-level threats immediately beside the starting town.
+- Open: whether biome identity mainly determines baseline difficulty, or whether otherwise similar biomes on different islands may vary widely in danger; character-level scaling, enemy-level bands, progression gates and resource tier rules are not yet chosen.
+
 ## CONFIRMED — starting-region spatial principles (2026-11-14)
 
 - Director shared a high-level **Map1-inspired town sketch**, and explicitly clarified that **two black markings represent two paths for entering the town**. They should **not** be interpreted as dark/hostile regions.
