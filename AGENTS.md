@@ -2,11 +2,11 @@
 
 ## Mandatory first steps in every new task/session
 
-1. Read README.md, docs/01_VISION.md, docs/02_DECISIONS.md, and docs/04_PROTOTYPE.md.
+1. Read README.md, docs/01_VISION.md, docs/02_DECISIONS.md, docs/04_PROTOTYPE.md, **and docs/11_PLAYABLE_WORKFLOW.md**. The new workflow overrides older instructions about the *size of the work unit*; the design decision ledger remains authoritative.
 2. Read the relevant sections of docs/03_DESIGN_NOTEBOOK.md and docs/05_DEVELOPMENT.md. Consult docs/08_CONVERSATION_COVERAGE_AUDIT.md when reconstructing context, making a design change, or checking if earlier user corrections are captured. Before introducing inventory, class logic, world generation, saving or network state, read docs/09_ARCHITECTURE_GUARDRAILS.md.
 3. Inspect the current repository and Unity project state before editing. Do not guess what has already been implemented.
-4. State the **one small task**, why it matters, and its acceptance test. Implement only that slice.
-5. Verify by compiling/importing in Unity and running appropriate automated checks; report what could **not** be checked. The human decides whether movement/combat/visuals actually **feel good**.
+4. State **one meaningful player-facing outcome** and a concrete playable acceptance scenario. You may implement several tightly related components within that slice (input, character behavior, enemy response, temporary art/animation, UI) **without returning to the user after every technical substep**. Avoid unrelated features and framework-building.
+5. Verify ordinary correctness via a focused automatic Unity build/Play Mode/test pass, and describe what could not be checked. **Request one human playtest only for a meaningful playable outcome**, not for every HP subtraction, input event, dummy flash or technical checkpoint. The human decides whether actual gameplay feels good.
 6. Update docs/02_DECISIONS.md when a real decision is made, and docs/04_PROTOTYPE.md or docs/05_DEVELOPMENT.md when implementation or tooling state changes.
 7. Preserve working changes and keep the project playable. Do not add unrelated systems.
 
@@ -17,7 +17,7 @@
 - Never silently promote an example number, weapon, NPC, class, dungeon, upgrade formula, video technique, or hypothetical feature into a requirement.
 - We're building an **original game**, not a Valheim modification.
 - Valheim is the survival/world foundation; Metin2 supplies RPG progression; New World mainly inspires a small profession overlay.
-- The first milestone is **movement and camera only**. Do not sneak in character levels, item systems, combat, networking, polished models, or world generation.
+- **Milestone 0.01a (movement and camera) is completed and committed.** The next player-facing goal is a short **interactive combat encounter**. The current local 0.02a capsule+dummy prototype is a **technical spike awaiting safe preservation**, not a successful combat-feel milestone. Do not mistake its debug overlay for gameplay.
 - Classes affect combat identity, **not** the right to build, farm, mine, explore, or craft. Solo viability for every class is a requirement.
 - Hard level restrictions for dungeons and mandatory support roles contradict the design.
 - The specific DSS/FKS weapon is **one possible item among many**, not the cornerstone of item design. Ordinary sword bonuses must not be arbitrarily restricted to particular sword models.
@@ -40,13 +40,22 @@
 
 **Do not keep working after the requested implementation is done just because a human playtest is pending.** A pending human playtest is a legitimate stopping point, not a reason for repeated probing.
 
-1. Define a **meaningful gameplay question** and a small acceptance test before editing. A technical smoke test (e.g. HP goes from 100 to 80) must not be presented as proof that fighting feels enjoyable. Prefer an end-to-end playable encounter over adding diagnostic complexity without a player-facing payoff.
+1. Define a **meaningful gameplay question** and a **complete playable scenario** before editing. A technical smoke test (e.g. HP goes from 100 to 80) is for the agent's automated verification, not an entire user-facing milestone. A small vertical slice may require multiple scripts and assets; keep it bounded but complete.
 2. Implement the requested scope, then perform **one focused verification pass** (compile/import, targeted automated checks, inspect Console if accessible). A second focused attempt is acceptable only if it can resolve a specific actionable failure. Avoid repeatedly relaunching Unity or reattempting commands that already failed for the same reason.
 3. **If Unity is already open, do not attempt batch mode on the same project**. Prefer the running Editor's Pipeline connection when available; if blocked, report that specific limitation once and stop.
-4. **If implementation is finished and human evaluation is necessary, immediately stop and report**: changed files, what objectively passed, what remains unverified, the single useful playtest goal, and whether changes are uncommitted. **Do not issue repeated reminders, status-only follow-ups, or request the same checks in a loop.** Never simulate waiting for the user.
+4. **When a playable outcome is ready**, stop and report: what the player can now *do*, changed files, evidence from automated checks, one **meaningful gameplay experience to evaluate**, and exact Git status. **Do not issue repeated reminders, status-only follow-ups, or request the same checks in a loop.** If a necessary tool is blocked, report once with a specific obstacle and stop; never simulate waiting for the user.
 5. Do not spend substantial extra time perfecting optional verifications, building elaborate overlays, or troubleshooting automation that does not answer the milestone's game-design question. Focus on observable player experience and technical correctness sufficient for the current slice.
-6. Do not stage/commit unreviewed gameplay work if the task explicitly requests a human playtest first. Do not touch unrelated local changes. Once review is complete, commit/push the reviewed change as a separate task when requested.
+6. Do not throw away local changes. **Preserve the current uncommitted combat spike safely before starting the next slice**, checking `git status` and maintaining the known unrelated `Assets/Editor` deletions. You may make local checkpoint commits when the user/task permits, but do not push or merge unreviewed gameplay work if the user explicitly requires a playtest first. Do not touch unrelated changes.
 7. Be explicit about the **difference between code/build verified, Play Mode observed, and human-tested gameplay feel**; none implies the other.
+
+## Working scale: a vertical slice, not a micro-ticket
+
+- **Wrong unit:** one HP change, one input action, one overlay label, one report per technical check. Those are internal implementation details.
+- **Right unit:** one short interaction the user can genuinely play and evaluate (for example, fight an approaching opponent with a visible attack, readable enemy strike, feedback, win/lose and immediate replay).
+- Use simple placeholder assets, but introduce **basic rigged characters/attack animations early enough for actual combat-feel testing**; don't claim final feel based only on capsules.
+- Build technical substeps independently, integrate them, run focused automated verification, and present a single playable result. Keep scope narrow enough to roll back; do not generate the entire game in one prompt.
+- Debug UIs are developer tools, normally tucked away, not substitutes for actual player-facing behavior.
+- If the user needs to evaluate **whether it is fun**, provide a meaningful encounter or building loop rather than asking for manual validation of simple math.
 
 ## Source-of-truth maintenance
 

@@ -25,7 +25,8 @@ This is **not** a Valheim mod and is **not** a plan to clone Metin2 or New World
 8. **[docs/08_CONVERSATION_COVERAGE_AUDIT.md](docs/08_CONVERSATION_COVERAGE_AUDIT.md)** — item-by-item audit mapping the important original conversation decisions, corrections, and unanswered questions to repository documentation.
 9. **[docs/09_ARCHITECTURE_GUARDRAILS.md](docs/09_ARCHITECTURE_GUARDRAILS.md)** — architecture risks, current preferences for persistence, stat/class/data layering, hybrid world generation and Valheim-like building.
 10. **[docs/10_ROADMAP.md](docs/10_ROADMAP.md)** — proposed path from graybox prototype to a tiny playable game combining survival/building and combat/RPG progression.
-11. **[AGENTS.md](AGENTS.md)** — operating instructions for Codex and future agents.
+11. **[docs/11_PLAYABLE_WORKFLOW.md](docs/11_PLAYABLE_WORKFLOW.md)** — revised gameplay-first workflow: meaningful playable outcomes, batched implementation, automated technical checks, and fewer manual handoffs.
+12. **[AGENTS.md](AGENTS.md)** — operating instructions for Codex and future agents.
 
 ## Single source of truth
 
