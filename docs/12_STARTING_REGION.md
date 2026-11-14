@@ -18,7 +18,7 @@ This is part of the **building/world-first development direction**. The RPG syst
 4. **Freedom outside town:** The nearby world should introduce exploration, gathering, and the possibility of choosing a home location. Do not prescribe permanent housing plots or require a specific combat class for building.
 5. **Terrain boundary and orientation:** The area marked as a **hill in the sketch is intended as a landscape boundary / edge of the drawn region**, **not** a proposed major gameplay destination or specially designed landmark. Recognizable orientation cues may be useful later, but their type and placement are open.
 6. **Readable transitions and danger:** Terrain, paths, vegetation, landmarks and later enemy placement should help players understand where they are going and when an area feels less safe; avoid making difficulty legible only through a UI level number.
-7. **Part of a larger world:** The significant town layout is **authored/hand-placed** within **generated surrounding wilderness**, consistent with the selected hybrid-world direction. The exact terrain-generation and placement method is undecided.
+7. **Part of one continuous world:** The significant town layout is **authored/hand-placed** within **generated surrounding wilderness** in one physically connected overworld (director confirmed Option A, 2026-11-14). The two entry paths connect directly to the landscape, **not** separate overworld maps or mandatory portal transitions. Terrain-generation, streaming and exact placement methods remain undecided.
 
 ## How to read the sketch (without over-interpreting it)
 

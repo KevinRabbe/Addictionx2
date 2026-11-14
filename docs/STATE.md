@@ -19,6 +19,10 @@
 - **Sequence:** establish the **world/home/building foundation first**; introduce the RPG experience **afterward**, while still protecting future integration with combat, loot and progression. No final order among terrain, construction, gathering and persistence has yet been decided.
 - **Planning gate:** do not treat `BRIEF_01_SHELTER.md` as an authorized implementation task until the world/building approach and risk boundaries have been considered sufficiently. It is a candidate brief, not a green light to start coding.
 
+## World design decision 1 — confirmed
+
+**One continuous main world**, not separate Metin2-style overworld maps. Authored settlements and locations will sit inside generated terrain; town entrances connect to surrounding wilderness without portal transitions. World size, landmass/ocean arrangement, streaming, fast travel and dungeon interior handling remain open. We are **discussing the world step by step**, not yet assigning a Codex implementation task.
+
 ## Starting-region design reference
 
 The director supplied a high-level **Map1-inspired starting-town sketch with two black-marked entry paths**. The town should be a safe, useful hub; players build outside it; the nearby wilderness should invite exploration; the drawn **hill marks a boundary**, not a committed gameplay landmark. **The two black marks are entrances, not dangerous biomes.** A **bottom-left area is a flexible potential NPC location** (mount-related only if needed; otherwise any suitable NPC). Detailed route roles and terrain geometry are open. See [12_STARTING_REGION.md](12_STARTING_REGION.md). **This is a design statement, not authorization to start a Codex scene task.**

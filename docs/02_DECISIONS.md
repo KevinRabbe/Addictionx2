@@ -24,6 +24,13 @@
 - **Every class should be able to finish the game alone.** Different boss times are acceptable; combat effectiveness can later be tuned via damage/resistances and bonuses.
 - Supports are **valuable but never mandatory**; support synergy may allow a party at level ~18–20 to clear a dungeon normally comfortable around level ~30 (numbers illustrative).
 
+## CONFIRMED — world structure decision 1 (2026-11-14)
+
+- **Option A explicitly selected:** Addiction² uses **one physically continuous, explorable main world**, Valheim-style, rather than a Metin2-style overworld divided into separate connected maps or portal-only regions.
+- **Authored locations inside generated land:** the Map1-inspired starting settlement and other important places are authored/hand-placed **within** the continuously explorable generated world, not a separately loaded Map1 overworld. The two town entry paths lead naturally into the surrounding landscape; they are not map-transfer portals.
+- **Unresolved independently:** dungeon interiors/scenes/instances, optional teleports or fast travel, streaming/scene loading behind the scenes, world size and limits, island/continent geography, and terrain-generation algorithm. A seamless-feeling world does not rule out technical streaming.
+- **Rationale:** preserve Valheim-like exploration, sailing possibilities, player-chosen home locations and an inhabitable shared world, while borrowing Metin2's crafted town identity and recognizable RPG locations.
+
 ## CONFIRMED — starting-region spatial principles (2026-11-14)
 
 - Director shared a high-level **Map1-inspired town sketch**, and explicitly clarified that **two black markings represent two paths for entering the town**. They should **not** be interpreted as dark/hostile regions.
