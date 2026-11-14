@@ -35,6 +35,15 @@ This document captures architectural concerns that could cause future rewrites, 
 - **Travel and resources:** progression-unlocked fast travel must be balanced against island exploration/sailing; renewable wood with mostly finite ore deposits requires planning for years-long shared saves without exhausting essential progression.
 - **Initial character arrival:** start in the handcrafted town, distinct from any future respawn/rejoin behavior.
 
+## Latest building / dungeon / co-op design boundaries (2026-11-14)
+
+- **Support rules:** Valheim-like structural stability is a gameplay target, **tempered by deliberate creative freedom**. Prototype readable structural constraints rather than codifying Valheim formulas or enforcing untested rigid snapping. Support recalculation must tolerate later terrain edits, save/load and eventual multiplayer.
+- **Dungeon state split:** discovered, persistent POIs should keep their once-generated layouts; explicitly repeatable dungeons may generate new layouts per run. Keep world-space entrance/POI identity separate from a run's transient layout/encounter state if this split becomes part of implementation. Actual instancing is not selected.
+- **Fast travel:** progression may eventually relax restrictions; require evidence that it does not invalidate long-distance travel or item transport gameplay.
+- **Respawn:** player-owned/assigned bed with starting-town fallback; handle invalidated beds in later save/co-op tests.
+- **Raids:** **open question**, including existence and frequency. No auto-spawn raid mechanic may be presumed from the Valheim inspiration; if pursued, consider warning, frequency, absence/offline safety and whether structures take lasting damage.
+- **Building permissions:** world setting for shared vs protected structures is **tentative**; don't freeze per-object ownership or permission infrastructure based solely on “I guess C”.
+
 ## 1. Networking and authoritative state
 
 A co-op game should plan who has authority over **combat outcomes, loot creation, item ownership, building placement and saves**, even if networking arrives later. A **host/server-authoritative approach** is a candidate, not an approved framework. Do not write every eventual multiplayer mechanic assuming a single global local player; keep input, simulation and visual representation separate where it is cheap.

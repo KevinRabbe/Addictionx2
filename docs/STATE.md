@@ -43,6 +43,17 @@
 
 **High-risk intersections:** persistence of terrain edits and built structures, protected-site borders, stable identities for generated POIs, availability of ore in long-lived co-op worlds, and not trivializing sailing with fast travel. No specific tools/frameworks, sizes, protection radii, portal restrictions or regeneration formulas have been authorized; this is still world/building design, not a Codex task.
 
+## Building and world decisions 18–23 — latest
+
+- **#18 confirmed intent:** Valheim-like structural stability **with enough freedom for inventive construction**. Exact support limitations to be playtested.
+- **#19 confirmed direction:** stable **once-generated dungeons** for persistent world locations; **freshly generated layouts** can serve highly repeatable runs. Dungeon taxonomy and runtime representation remain open.
+- **#20C confirmed:** unlockable improvements to fast-travel restrictions, while preserving reasons to sail.
+- **#21A confirmed:** respawn at an assigned bed, otherwise starting town.
+- **#22 open:** the director is unsure whether base raids should exist and how often; discuss rare/optional raids with protections for peaceful building and co-op absence, but do not lock any scheme.
+- **#23C tentative:** world-level configurable shared building vs ownership permissions, not yet an approved network permission system.
+
+**Current conversation focus:** resolve the *player experience* of raids before committing any raid subsystem. No Codex task is authorized.
+
 ## Starting-region design reference
 
 The director supplied a high-level **Map1-inspired starting-town sketch with two black-marked entry paths**. The town should be a safe, useful hub; players build outside it; the nearby wilderness should invite exploration; the drawn **hill marks a boundary**, not a committed gameplay landmark. **The two black marks are entrances, not dangerous biomes.** A **bottom-left area is a flexible potential NPC location** (mount-related only if needed; otherwise any suitable NPC). Detailed route roles and terrain geometry are open. See [12_STARTING_REGION.md](12_STARTING_REGION.md). **This is a design statement, not authorization to start a Codex scene task.**

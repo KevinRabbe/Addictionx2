@@ -99,6 +99,19 @@
 
 **Shared implications:** terrain changes and player constructions must persist across save/load and eventual co-op; the protection system must be respected by both building and terrain-edit tools; procedurally generated POIs must not regenerate over existing player/world state. These are design constraints, **not Codex implementation instructions or selected frameworks**.
 
+## WORLD / BUILDING CHOICES 18–23 — mixed confirmation and open questions (2026-11-14)
+
+The director replied: **18A, but building must remain creatively free with some limitations; 19A for stable dungeons, 19B for highly repeatable ones; 20C; 21A; 22 unsure (especially whether raids are frequent or rare); 23C tentatively.** Preserve the nuance rather than treating all six as blanket approvals.
+
+- **#18 — Structural support with creative freedom (confirmed high-level intent):** choose **A, Valheim-inspired structural stability**, but support rules should impose meaningful *readable* limitations **without stifling imaginative construction**. Exact reach/span formulas, material strength, collapse behavior, visual cues, snap restrictions, and physics are **not locked**; prototype support mechanics for both enjoyable constraints and varied creative builds.
+- **#19 — Dungeon persistence depends on purpose (confirmed direction):** **A for persistent discovered locations** (generate a dungeon layout once for a world, maintain that layout), while **B can suit explicitly repeatable/run-based dungeons** (new layout per run). Preserve story and world-space continuity where appropriate. Which dungeons are run-based, if entrances lead to instances, raid/party state, and how loot/progression resets work are **unselected**. Do not re-randomize permanent locations unexpectedly or replace any persistent player modifications.
+- **#20 C — Progression-upgraded fast travel (confirmed):** some teleportation limitations can be eased/unlocked as players advance. Exact initial restrictions, upgrades, transported resources, and the balance against sailing remain **undecided**. This refines #16, not a decision to remove ships' purpose.
+- **#21 A — Home bed / town fallback respawn (confirmed):** a player-assigned bed acts as respawn location; a player lacking a valid bed falls back to starting town. Death penalties, ownership/bedsharing, dungeon exceptions, invalid/destroyed bed handling, and multiplayer respawn rules still need design.
+- **#22 — Base raids (OPEN):** the director is undecided **whether raids should exist at all and, if they do, how frequent or rare they should be**. Do not write optional raids or a particular cadence as approved. Important questions include peaceful building sessions, warning, structure damage, player presence, offline co-op grief, and world settings.
+- **#23 C — Multiplayer permissions as world setting (TENTATIVE):** director said **“I guess C”**: host/world configuration could choose between more-shared building interaction and individual ownership protection. This is **not a final permissions/access-control model** and should not yet dictate save schema or multiplayer framework.
+
+**Cross-system caution:** structural support must operate after terraforming and across saves; generated world dungeons and repeated-run dungeons need distinct state/lifecycle concepts; bed respawning, raid activity and permissions interact with host authority and whether owners are online. These remain architecture considerations, **not permission to launch Codex work**.
+
 ## CONFIRMED — starting-region spatial principles (2026-11-14)
 
 - Director shared a high-level **Map1-inspired town sketch**, and explicitly clarified that **two black markings represent two paths for entering the town**. They should **not** be interpreted as dark/hostile regions.
