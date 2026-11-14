@@ -55,11 +55,12 @@
 - **The town must fit its location naturally**, with paths meeting the landscape. The implementation approach (terrain shaping, placement constraints, road blending, generator rules) is **not yet chosen**; do not assume a runtime pasted prefab or hand-code a fixed location.
 - Maintain the **two entrances**, inland-near-coast character and prohibition on building inside the town. The broader islands-and-oceans topology remains **preferred for experiments**, not fully fixed.
 
-## PROVISIONAL DIRECTION — biomes and enemy levels (world discussion 6, 2026-11-14)
+## CONFIRMED — biome identity and consistent baseline danger (world decision 6, 2026-11-14)
 
-- Director responded **“ahh a but C yeah”** when choosing between (A) Valheim-style biome difficulty, (B) Metin2-style level territories and (C) hybrid biome/environment plus varied local encounters. This suggests **interest in preserving A's recognizable biome progression while leaning toward C's local enemy/POI flexibility**; do **not** treat a precise formula or zone rule as confirmed yet.
-- **Candidate synthesis for confirmation:** biomes establish a readable baseline of resources, atmosphere and danger, while subregions, enemy groups, camps, rare encounters and dungeons can present harder challenges within a biome; avoid unexplained high-level threats immediately beside the starting town.
-- Open: whether biome identity mainly determines baseline difficulty, or whether otherwise similar biomes on different islands may vary widely in danger; character-level scaling, enemy-level bands, progression gates and resource tier rules are not yet chosen.
+- Director chose **Option A: consistent baseline difficulty by biome across the world**, after previously favoring a mixture of Valheim's biome danger and Metin2-style varied encounters. A biome should generally communicate a learnable danger level wherever it appears; **do not make an ordinary Dark Forest on a distant island inherently much higher-level than the same Dark Forest near the start**.
+- The earlier hybrid interest remains compatible: **identifiable exceptional locations or enemies** (camps, elites, bosses, dungeons) may exceed the surrounding biome's baseline, with appropriate visual or gameplay warning. Their presence should not make ordinary enemies unpredictable.
+- This confirms the **relative biome consistency principle**, **not** biome names, exact enemy levels, scaling formulas, level-gating rules, map distributions, enemy rosters, or the number of starting-island biomes.
+
 
 ## CONFIRMED — starting-region spatial principles (2026-11-14)
 
