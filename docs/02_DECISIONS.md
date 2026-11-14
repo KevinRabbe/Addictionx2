@@ -40,8 +40,14 @@
 ## CONFIRMED — starting-island experience (world decision 3, 2026-11-14)
 
 - Director chose **Option B: medium-to-large starting island** within the experimental ocean-and-islands world direction. The starting landmass should provide substantial room for exploring and building around the Map1-inspired starting town **without requiring a boat immediately**.
-- **Not yet decided:** exact island size or traversal time, number of biomes/resources, coastline shape, starting town's coastal or inland location, location of other islands, when sailing becomes necessary and technical world generation settings. “Medium-to-large” is an experience target, not a locked size in square kilometers.
+- **Not yet decided:** exact island size or traversal time, number of biomes/resources, coastline shape, location of other islands, when sailing becomes necessary and technical world generation settings. “Medium-to-large” is an experience target, not a locked size in square kilometers.
 - **Relationship to Decision #2:** choosing starting-island B does **not** finalize the broader archipelago/world topology; island-and-ocean geography remains the preferred approach to experiment with.
+
+## CONFIRMED — starting-town placement (world decision 4, 2026-11-14)
+
+- Director chose **Option C: inland but relatively near the coast** on the medium-to-large starting island. The Map1-inspired settlement should feel like a town among land, forests and hills, **not a seafront town**, while the coastline is reachable through exploration.
+- This does **not** approve a fixed walking distance, a harbor/dock, a specific road to the sea, an ocean view from town, or the position of the town on every generated island.
+- The previously drawn two entrance routes remain **two land routes to the surrounding world**; their precise directions and whether either eventually reaches the coast are undecided.
 
 ## CONFIRMED — starting-region spatial principles (2026-11-14)
 

@@ -29,6 +29,10 @@ This is part of the **building/world-first development direction**. The RPG syst
 - Do **not** assume one road is for survival/building and the other is for combat/RPG. Both should belong to the same explorable world; whether one becomes a main route and the other a secondary route is **undecided**.
 - The town should feel connected to the world rather than like an isolated tutorial corridor. A wall, gate, elevation advantage or natural boundary might help, but **no specific fortification has been approved**.
 
+## Placement on the starting island — confirmed direction
+
+The director chose **an inland settlement relatively near the coast** (world decision #4, 2026-11-14). It should retain a land-based Map1-style feel rather than become a coastal port. Sailing can matter later, but town-to-shore travel time, coastal roads, harbor placement and whether the sea is visible from town are **not decided**. Both existing entrances remain paths to the wilderness; do not arbitrarily designate either as the route to a dock.
+
 ## Player-building relationship
 
 The protected town serves as an initial point of reference and NPC support. After leaving by either path, players eventually find a place for their own home in the wilderness. The home should be something players can grow and return to over many sessions; **placement restrictions, terrain rules, structural support, permissions and exact home benefits have not yet been selected**.
