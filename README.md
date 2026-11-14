@@ -28,8 +28,9 @@ This is **not** a Valheim mod and is **not** a plan to clone Metin2 or New World
 11. **[docs/11_PLAYABLE_WORKFLOW.md](docs/11_PLAYABLE_WORKFLOW.md)** — revised gameplay-first workflow: meaningful playable outcomes, batched implementation, automated technical checks, and fewer manual handoffs.
 12. **[docs/STATE.md](docs/STATE.md)** — CURRENT one-page milestone, user priority, local safety, and next loop; read first when doing development work.
 13. **[docs/BRIEF_01_SHELTER.md](docs/BRIEF_01_SHELTER.md)** — candidate building-first Codex brief (not yet authorized to implement).
-14. **[docs/12_STARTING_REGION.md](docs/12_STARTING_REGION.md)** — confirmed starting-town principles, two sketched entry routes, landmarks, building outside town and unresolved spatial design.
-15. **[AGENTS.md](AGENTS.md)** — operating instructions for Codex and future agents.
+14. **[docs/12_STARTING_REGION.md](docs/12_STARTING_REGION.md)** — confirmed starting-town principles, two entry routes, the hill as a landscape boundary, building outside town and unresolved spatial design.
+15. **[docs/13_WORLD_BUILDING_STRATEGY.md](docs/13_WORLD_BUILDING_STRATEGY.md)** — proposed sequence for playable building, terrain, persistence, early co-op checks and generated-world integration; **not an approved Codex task**.
+16. **[AGENTS.md](AGENTS.md)** — operating instructions for Codex and future agents.
 
 ## Single source of truth
 

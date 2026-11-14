@@ -58,6 +58,10 @@
 
 The director supplied a high-level **Map1-inspired starting-town sketch with two black-marked entry paths**. The town should be a safe, useful hub; players build outside it; the nearby wilderness should invite exploration; the drawn **hill marks a boundary**, not a committed gameplay landmark. **The two black marks are entrances, not dangerous biomes.** A **bottom-left area is a flexible potential NPC location** (mount-related only if needed; otherwise any suitable NPC). Detailed route roles and terrain geometry are open. See [12_STARTING_REGION.md](12_STARTING_REGION.md). **This is a design statement, not authorization to start a Codex scene task.**
 
+## Proposed development strategy — planning only
+
+See [13_WORLD_BUILDING_STRATEGY.md](13_WORLD_BUILDING_STRATEGY.md) for a **playable-first sequence**: preserve/reconcile local work and check terrain constraints → outdoor shelter placement **feel** (possibly free materials first) → terraforming + persistent structures → early two-player world-state checkpoint → limited seeded region with the authored town → integrated gathering/home loop and later RPG encounters. This is **not authorization** to launch `BRIEF_01_SHELTER.md`; that candidate may be revised to focus first on placement/world feel.
+
 ## Current state
 
 - **Available on GitHub:** `Prototype_Movement` scene and controller/camera, playtested and committed (`3feb669`). User liked WASD and orbit camera.
