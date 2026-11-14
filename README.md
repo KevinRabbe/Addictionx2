@@ -27,8 +27,9 @@ This is **not** a Valheim mod and is **not** a plan to clone Metin2 or New World
 10. **[docs/10_ROADMAP.md](docs/10_ROADMAP.md)** — proposed path from graybox prototype to a tiny playable game combining survival/building and combat/RPG progression.
 11. **[docs/11_PLAYABLE_WORKFLOW.md](docs/11_PLAYABLE_WORKFLOW.md)** — revised gameplay-first workflow: meaningful playable outcomes, batched implementation, automated technical checks, and fewer manual handoffs.
 12. **[docs/STATE.md](docs/STATE.md)** — CURRENT one-page milestone, user priority, local safety, and next loop; read first when doing development work.
-13. **[docs/BRIEF_01_SHELTER.md](docs/BRIEF_01_SHELTER.md)** — first building-first Codex brief: gather wood and build a shelter.
-14. **[AGENTS.md](AGENTS.md)** — operating instructions for Codex and future agents.
+13. **[docs/BRIEF_01_SHELTER.md](docs/BRIEF_01_SHELTER.md)** — candidate building-first Codex brief (not yet authorized to implement).
+14. **[docs/12_STARTING_REGION.md](docs/12_STARTING_REGION.md)** — confirmed starting-town principles, two sketched entry routes, landmarks, building outside town and unresolved spatial design.
+15. **[AGENTS.md](AGENTS.md)** — operating instructions for Codex and future agents.
 
 ## Single source of truth
 

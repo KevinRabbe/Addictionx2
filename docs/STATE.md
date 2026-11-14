@@ -19,6 +19,10 @@
 - **Sequence:** establish the **world/home/building foundation first**; introduce the RPG experience **afterward**, while still protecting future integration with combat, loot and progression. No final order among terrain, construction, gathering and persistence has yet been decided.
 - **Planning gate:** do not treat `BRIEF_01_SHELTER.md` as an authorized implementation task until the world/building approach and risk boundaries have been considered sufficiently. It is a candidate brief, not a green light to start coding.
 
+## Starting-region design reference
+
+The director supplied a high-level **Map1-inspired starting-town sketch with two black-marked entry paths**. The town should be a safe, useful hub; players build outside it; the nearby wilderness should invite exploration and show a prominent hill/landmark. **The two black marks are entrances, not dangerous biomes.** Detailed route roles and terrain geometry are open. See [12_STARTING_REGION.md](12_STARTING_REGION.md). **This is a design statement, not authorization to start a Codex scene task.**
+
 ## Current state
 
 - **Available on GitHub:** `Prototype_Movement` scene and controller/camera, playtested and committed (`3feb669`). User liked WASD and orbit camera.
