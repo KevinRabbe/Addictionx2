@@ -69,6 +69,14 @@
 - This is a **high-level gameplay distribution**, not approval of exactly two biome types in the complete game, biome names, level brackets, exact land proportions, hard gates, or a fixed island template. Distinct elite camps/dungeons can still be exceptional encounters within the baseline biome danger system.
 - The overall ocean/island geography remains a **preferred approach for experimentation**. Test traversal and world-building feel before fixing precise geography or generation rules.
 
+## CONFIRMED — biome placement across the world (world decision 8, 2026-11-14)
+
+- Director delegated the choice between **A (Valheim-style distance progression)** and **C (guided randomness)** to design planning, saying both seem good. **Chosen: C, with A's distance-based progression as the dominant backbone**.
+- **Generator design rule, not a fixed algorithm:** more dangerous biome types should become **more common farther from the starting area**, so outward exploration generally feels progressive. The starting island still guarantees a safe beginner biome and the first more dangerous biome (Decision #7).
+- **Meaningful but controlled exceptions:** distant islands may still have safe biomes, and relatively nearby islands may have some higher-risk terrain **provided the first-play safety and travel experience remain fair**. Do not distribute danger completely randomly or force a player to cross an unexpectedly extreme biome to reach ordinary early content.
+- **Biome consistency remains intact (Decision #6):** a biome's ordinary encounter baseline does not scale with distance. Distance affects **probability of biome occurrence**, **not** the enemy levels inside the same biome.
+- Exact distance curves, world radius, biome counts, rarity probabilities, island layout, guaranteed routes and generation algorithms are **undecided** and need empirical world-generation/exploration tests. Overall island-and-ocean geography is still a **preferred experimental direction** rather than a completely locked implementation.
+
 ## CONFIRMED — starting-region spatial principles (2026-11-14)
 
 - Director shared a high-level **Map1-inspired town sketch**, and explicitly clarified that **two black markings represent two paths for entering the town**. They should **not** be interpreted as dark/hostile regions.
