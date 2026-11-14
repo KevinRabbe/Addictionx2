@@ -25,7 +25,7 @@
 
 ## World design direction 2 — island geography (experimental)
 
-**Preference, not final lock:** the director favors **Option A: islands and oceans**, and wants to experiment with that world structure. A large-continent hybrid (Option C) is less attractive partly because the director expects it would make **mounts necessary for overland travel**. Do not add mounts, boats or a fixed archipelago algorithm from this preference alone. **Next design question:** how much explorable/buildable land should be accessible around the starting town before sailing is needed?
+**Preference, not final lock:** the director favors **Option A: islands and oceans**, and wants to experiment with that world structure. A large-continent hybrid (Option C) is less attractive partly because the director expects it would make **mounts necessary for overland travel**. Do not add mounts, boats or a fixed archipelago algorithm from this preference alone. **World decision #3 confirmed:** a **medium-to-large starting island (Option B)**, with enough room for early exploration and building without needing to sail. Exact size, sailing timing and world geography remain to be tested. **Next design question:** where on that island should the handcrafted starting town sit (coast, inland, or near but not directly on the coast)?
 
 ## Starting-region design reference
 

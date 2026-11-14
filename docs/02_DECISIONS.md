@@ -35,7 +35,13 @@
 
 - **World-design Decision #2 is deliberately provisional:** director personally **prefers Option A**, a Valheim-like world of islands and oceans, and explicitly wants to **experiment with it**, rather than approving a final world-generation topology.
 - **Option C (large starting continent plus distant islands)** remains an alternative but is currently less preferred. The director considers **mounts likely necessary if Option C is chosen** because of longer overland travel. This is a design concern, **not an approved mounts feature or mandatory NPC**.
-- **Testing implications:** start with the experience of exploring/building on a landmass and eventually crossing water; avoid implementing boats/mounts simply because a map category was mentioned. Starting-island scale, when sailing becomes necessary, archipelago spacing, biome placement and number of landmasses all remain undecided.
+- **Testing implications:** start with the experience of exploring/building on a landmass and eventually crossing water; avoid implementing boats/mounts simply because a map category was mentioned. When sailing becomes necessary, archipelago spacing, biome placement and number of landmasses all remain undecided.
+
+## CONFIRMED — starting-island experience (world decision 3, 2026-11-14)
+
+- Director chose **Option B: medium-to-large starting island** within the experimental ocean-and-islands world direction. The starting landmass should provide substantial room for exploring and building around the Map1-inspired starting town **without requiring a boat immediately**.
+- **Not yet decided:** exact island size or traversal time, number of biomes/resources, coastline shape, starting town's coastal or inland location, location of other islands, when sailing becomes necessary and technical world generation settings. “Medium-to-large” is an experience target, not a locked size in square kilometers.
+- **Relationship to Decision #2:** choosing starting-island B does **not** finalize the broader archipelago/world topology; island-and-ocean geography remains the preferred approach to experiment with.
 
 ## CONFIRMED — starting-region spatial principles (2026-11-14)
 
