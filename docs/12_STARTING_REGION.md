@@ -16,13 +16,14 @@ This is part of the **building/world-first development direction**. The RPG syst
 2. **No construction inside town:** Player-built homes and structures belong **outside the established settlement**. Build restrictions must eventually be clear to players and work with the future persistent world.
 3. **Two entrances / access paths:** **Both black markings in the user's drawing indicate paths used to enter the town.** They are **not** representations of dark forests, danger zones, or other biomes. Preserve the intent that the settlement connects to the surrounding world through **two routes**.
 4. **Freedom outside town:** The nearby world should introduce exploration, gathering, and the possibility of choosing a home location. Do not prescribe permanent housing plots or require a specific combat class for building.
-5. **Recognizable terrain landmark:** At least one prominent landmark should help players orient themselves. The sketch labels a **hill**; its exact shape, height and function remain open.
+5. **Terrain boundary and orientation:** The area marked as a **hill in the sketch is intended as a landscape boundary / edge of the drawn region**, **not** a proposed major gameplay destination or specially designed landmark. Recognizable orientation cues may be useful later, but their type and placement are open.
 6. **Readable transitions and danger:** Terrain, paths, vegetation, landmarks and later enemy placement should help players understand where they are going and when an area feels less safe; avoid making difficulty legible only through a UI level number.
 7. **Part of a larger world:** The significant town layout is **authored/hand-placed** within **generated surrounding wilderness**, consistent with the selected hybrid-world direction. The exact terrain-generation and placement method is undecided.
 
 ## How to read the sketch (without over-interpreting it)
 
-- The drawing suggests a settlement with simple structures, adjacent open ground, terrain elevation/hill and **two access routes**.
+- The drawing suggests a settlement with simple structures, adjacent open ground, a **hill drawn to indicate a boundary**, and **two access routes**.
+- The **bottom-left marked position** is a **possible NPC location**: perhaps a mount-related NPC **if mounts need such a service**, or another NPC if that fits later gameplay better. It is **not** a confirmed mount system or a required NPC.
 - The **black markings identify the two entry routes**. Previous speculation that those marks depicted dangerous or dark regions was **incorrect**.
 - The sketch communicates **relationships and spatial identity**, not final distances, north/south orientation, road widths, gates, house counts, building zones or enemy locations.
 - Do **not** assume one road is for survival/building and the other is for combat/RPG. Both should belong to the same explorable world; whether one becomes a main route and the other a secondary route is **undecided**.
@@ -37,10 +38,10 @@ The eventual implementation must distinguish **authored town content**, **genera
 ## Design questions still open
 
 - How do the **two entrance routes** physically meet the town? Their exact positions, width, grade, gate treatments and relative importance.
-- How elevated is the settlement, and how does the hill shape travel and sight lines?
+- What is the boundary implied by the sketched hill (terrain rise, surrounding ridge or just conceptual map edge)? **Do not assume it must become a special destination or gameplay landmark.**
 - What is the practical safety boundary, and how gradually do threats appear outside it?
 - How large is the surrounding first-play area, where are natural building spots, and how do we avoid an artificial housing-zone feeling?
-- Which NPCs and services besides the required blacksmith actually earn their place?
+- Which NPCs and services besides the required blacksmith actually earn their place? The bottom-left mark is a **flexible possible NPC spot**, with a mount NPC only a conditional idea.
 - How does an authored town meet procedurally generated terrain without seams or regeneration destroying player changes?
 
 ## Planning and implementation guardrail

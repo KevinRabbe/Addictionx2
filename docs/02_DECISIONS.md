@@ -27,7 +27,8 @@
 ## CONFIRMED — starting-region spatial principles (2026-11-14)
 
 - Director shared a high-level **Map1-inspired town sketch**, and explicitly clarified that **two black markings represent two paths for entering the town**. They should **not** be interpreted as dark/hostile regions.
-- Director endorsed recording **starting-region design principles**: a safe NPC service town, **no player building inside**, first nearby exploration/building possibilities, at least one clear landmark, visually understandable transitions into more dangerous surroundings, and readable directions to travel and gather. A **hill** appears as a proposed landmark in the sketch.
+- Director endorsed recording **starting-region design principles**: a safe NPC service town, **no player building inside**, first nearby exploration/building possibilities, at least one clear landmark, visually understandable transitions into more dangerous surroundings, and readable directions to travel and gather. The drawn **hill represents a terrain/map boundary**, rather than an approved landmark destination.
+- The **bottom-left mark** suggests space for an **optional NPC**, possibly for mounts if that service becomes relevant, or for another NPC. A mount system, mount vendor and exact NPC roster are **not** confirmed.
 - The exact map outline, number of buildings, road roles, terrain heights, NPC layout, enemy placement, location of any gates and building-zone boundaries remain **undecided**. **Do not invent a forced survival path vs RPG path division.**
 - This design is consistent with the prior choice of an **authored settlement in a generated world**. It is a **design statement, not a Codex task or finalized world geometry**. See `docs/12_STARTING_REGION.md`.
 
