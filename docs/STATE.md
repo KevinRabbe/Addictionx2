@@ -29,7 +29,7 @@
 
 ## World decision 6 — consistent biome danger confirmed
 
-**Confirmed:** comparable instances of the same biome across different islands should have a **recognizable, generally consistent baseline enemy difficulty** (director chose Option A). Metin2-inspired elite enemies, camps, bosses, and dungeons can provide **signposted exceptional challenges** without silently changing ordinary biome difficulty by island. No specific enemy levels, biome roster, scaling, or procedural implementation is approved. **Next question:** how many and which difficulty tiers should be reachable on the starting island before sailing? No Codex task is authorized.
+**Confirmed:** comparable instances of the same biome across different islands should have a **recognizable, generally consistent baseline enemy difficulty** (director chose Option A). Metin2-inspired elite enemies, camps, bosses, and dungeons can provide **signposted exceptional challenges** without silently changing ordinary biome difficulty by island. No specific enemy levels, biome roster, scaling, or procedural implementation is approved. **World decision #7 confirmed:** start with **a safer beginner biome and one more dangerous biome on the same landmass**, enabling early homebuilding and meaningful exploration before sailing. Biome names and sizes are open. **Next question:** how should different biomes be distributed across distant islands and distances from the starting town? No Codex task is authorized.
 
 ## Starting-region design reference
 
