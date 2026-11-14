@@ -36,6 +36,18 @@
 - Avoid destructive scene edits, force pushes, and sweeping refactors. Use small diffs and explain unexpected changes.
 - Automated tests prove code behavior, not that action combat feels good. Ask for a human playtest only when there is something runnable.
 
+## Stop conditions and efficient verification (required for every Codex task)
+
+**Do not keep working after the requested implementation is done just because a human playtest is pending.** A pending human playtest is a legitimate stopping point, not a reason for repeated probing.
+
+1. Define a **meaningful gameplay question** and a small acceptance test before editing. A technical smoke test (e.g. HP goes from 100 to 80) must not be presented as proof that fighting feels enjoyable. Prefer an end-to-end playable encounter over adding diagnostic complexity without a player-facing payoff.
+2. Implement the requested scope, then perform **one focused verification pass** (compile/import, targeted automated checks, inspect Console if accessible). A second focused attempt is acceptable only if it can resolve a specific actionable failure. Avoid repeatedly relaunching Unity or reattempting commands that already failed for the same reason.
+3. **If Unity is already open, do not attempt batch mode on the same project**. Prefer the running Editor's Pipeline connection when available; if blocked, report that specific limitation once and stop.
+4. **If implementation is finished and human evaluation is necessary, immediately stop and report**: changed files, what objectively passed, what remains unverified, the single useful playtest goal, and whether changes are uncommitted. **Do not issue repeated reminders, status-only follow-ups, or request the same checks in a loop.** Never simulate waiting for the user.
+5. Do not spend substantial extra time perfecting optional verifications, building elaborate overlays, or troubleshooting automation that does not answer the milestone's game-design question. Focus on observable player experience and technical correctness sufficient for the current slice.
+6. Do not stage/commit unreviewed gameplay work if the task explicitly requests a human playtest first. Do not touch unrelated local changes. Once review is complete, commit/push the reviewed change as a separate task when requested.
+7. Be explicit about the **difference between code/build verified, Play Mode observed, and human-tested gameplay feel**; none implies the other.
+
 ## Source-of-truth maintenance
 
 - Keep the main documents coherent; do not treat chat messages as authoritative if the repository says otherwise.
